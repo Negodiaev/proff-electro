@@ -5,6 +5,11 @@ body,
   height: 100%;
 }
 
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 .off-canvas-wrapper {
   overflow-x: hidden;
   overflow-y: auto;
@@ -13,7 +18,7 @@ body,
 .off-canvas {
   &.is-open {
     & ~ .off-canvas-content {
-      .hamb {
+      .burger {
         i {
           &:first-child() {
             transform: translateY(8px) rotate(45deg);
@@ -36,5 +41,15 @@ body,
   height: 100%;
   & > .main {
     flex: 1 0 auto;
+  }
+}
+
+.content-card {
+  background-color: #fff;
+}
+
+.scl {
+  svg {
+    min-width: 20px;
   }
 }

@@ -14664,6 +14664,10 @@ module.exports = function (module) {
 "use strict";
 
 
+var _jquery = __webpack_require__(0);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 var _whatInput = __webpack_require__(41);
 
 var _whatInput2 = _interopRequireDefault(_whatInput);
@@ -14678,25 +14682,55 @@ var _swiper2 = _interopRequireDefault(_swiper);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-// $(document).foundation();
+window.$ = _jquery2.default;
+// If you want to pick and choose which modules to include, comment out the above and uncomment
+// the line below
+//import './lib/foundation-explicit-pieces';
 
-// window.$ = $;
+
+(0, _jquery2.default)(document).foundation();
 
 document.addEventListener('DOMContentLoaded', function (event) {
   //------------------------------------------------------------------------//
-  var mySwiper = new _swiper2.default('.swiper-container', {
+  //Banner slider
+  var bannerSwiper = new _swiper2.default('.banner-slider', {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.swiper-pagination'
+      el: '.banner-slider .swiper-pagination'
+    }
+  });
+
+  //------------------------------------------------------------------------//
+  //Goods slider
+  var goodsSwiper = new _swiper2.default('.goods-slider', {
+    slidesPerView: 4,
+    // spaceBetween: 30,
+    slidesPerGroup: 4,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.goods-slider .swiper-button-next',
+      prevEl: '.goods-slider .swiper-button-prev'
+    }
+  });
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Articles slider
+  var articlesSwiper = new _swiper2.default('.articles-slider', {
+    slidesPerView: 2,
+    spaceBetween: 20,
+    slidesPerGroup: 2,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '.articles-slider .swiper-button-next',
+      prevEl: '.articles-slider .swiper-button-prev'
     }
   });
   //------------------------------------------------------------------------//
 });
-// If you want to pick and choose which modules to include, comment out the above and uncomment
-// the line below
-//import './lib/foundation-explicit-pieces';
-// import $ from 'jquery';
 
 /***/ }),
 /* 22 */

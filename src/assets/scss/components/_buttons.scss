@@ -2,7 +2,7 @@ button {
   cursor: pointer;
 }
 
-.hamb {
+.burger {
   position: relative;
   width: 25px;
   height: 25px;
@@ -30,5 +30,11 @@ button {
     &:nth-child(3) {
       top: 19px;
     }
+  }
+}
+
+.button-cart {
+  svg {
+    width: 24px;
   }
 }
