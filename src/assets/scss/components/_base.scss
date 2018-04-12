@@ -1,0 +1,40 @@
+html,
+body,
+.off-canvas-wrapper,
+.off-canvas-content {
+  height: 100%;
+}
+
+.off-canvas-wrapper {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.off-canvas {
+  &.is-open {
+    & ~ .off-canvas-content {
+      .hamb {
+        i {
+          &:first-child() {
+            transform: translateY(8px) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.sticky-footer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  & > .main {
+    flex: 1 0 auto;
+  }
+}
