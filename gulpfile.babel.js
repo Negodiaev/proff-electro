@@ -13,6 +13,11 @@ import webpackStream from 'webpack-stream';
 import webpack2 from 'webpack';
 import named from 'vinyl-named';
 
+import svgSprite from 'gulp-svg-sprite';
+import svgmin from 'gulp-svgmin';
+import cheerio from 'gulp-cheerio';
+import replace from 'gulp-replace';
+
 // Load all Gulp plugins into one variable
 const $ = plugins();
 
@@ -27,14 +32,65 @@ function loadConfig() {
   return yaml.load(ymlFile);
 }
 
+// Create SVG sprite
+gulp.task('sprite', gulp.series(createSprite));
+
 // Build the "dist" folder by running all of the below tasks
-gulp.task('build', gulp.series(clean, gulp.parallel(pages, sass, javascript, images, copy), styleGuide));
+gulp.task(
+  'build',
+  gulp.series(clean, 'sprite', gulp.parallel(pages, sass, javascript, images, copy), styleGuide)
+);
 
 // Turn the "dist" folder into the "docs" folder for Github Pages
 gulp.task('deploy', gulp.series(cleanDeploy, 'build', deploy));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default', gulp.series('build', server, watch));
+
+// Create SVG sprite
+let spriteConfig = {
+  mode: {
+    symbol: {
+      sprite: '../../../partials/sprite.html',
+      render: {
+        scss: {
+          dest: '../../scss/components/_sprite.scss'
+          // template: '../../scss/helpers/_sprite_template.scss'
+        }
+      }
+    }
+  }
+};
+
+function createSprite() {
+  return (
+    gulp
+      .src(PATHS.svg)
+      .pipe(
+        svgmin({
+          js2svg: {
+            pretty: true
+          }
+        })
+      )
+      // remove all fill, style and stroke declarations in out shapes
+      .pipe(
+        cheerio({
+          run: function($) {
+            $('[fill]').removeAttr('fill');
+            $('[stroke]').removeAttr('stroke');
+            $('[style]').removeAttr('style');
+          },
+          parserOptions: { xmlMode: true }
+        })
+      )
+      // cheerio plugin create unnecessary string '&gt;', so replace it.
+      .pipe(replace('&gt;', '>'))
+      // build svg sprite
+      .pipe(svgSprite(spriteConfig))
+      .pipe(gulp.dest('src/assets/img'))
+  );
+}
 
 // Delete the "dist" folder
 // This happens every time a build starts
@@ -157,7 +213,7 @@ function javascript() {
 // In production, the images are compressed
 function images() {
   return gulp
-    .src('src/assets/img/**/*')
+    .src('src/assets/img/**/*.+(png|jpg|jpeg|gif|ico)')
     .pipe(
       $.if(
         PRODUCTION,
@@ -191,6 +247,7 @@ function watch() {
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/img/**/*.+(png|jpg|jpeg|gif|ico)').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/img/svg/*.svg').on('all', gulp.series(createSprite, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

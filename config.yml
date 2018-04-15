@@ -32,3 +32,6 @@ PATHS:
   # Paths to JavaScript entry points for webpack to bundle modules
   entries:
     - "src/assets/js/app.js"
+  # Paths to SVG icons for creating SVG sprite
+  svg:
+    - "src/assets/img/svg/*.svg"
