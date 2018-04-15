@@ -39,22 +39,20 @@ body,
   }
 }
 
+// hide the sprite
+.sprite-container {
+  position: absolute;
+  bottom: -900px;
+  overflow: hidden;
+  height: 0;
+}
+
 svg {
   display: inline-block;
   vertical-align: middle;
-  &.icon {
-    width: 1rem;
-    height: 1rem;
-    max-width: 100%;
-  }
+  max-width: 100%;
 }
 
 .content-card {
   background-color: #fff;
-}
-
-.scl {
-  svg {
-    min-width: 20px;
-  }
 }
