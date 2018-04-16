@@ -74,16 +74,16 @@ function createSprite() {
         })
       )
       // remove all fill, style and stroke declarations in out shapes
-      .pipe(
-        cheerio({
-          run: function($) {
-            $('[fill]').removeAttr('fill');
-            $('[stroke]').removeAttr('stroke');
-            $('[style]').removeAttr('style');
-          },
-          parserOptions: { xmlMode: true }
-        })
-      )
+      // .pipe(
+      //   cheerio({
+      //     run: function($) {
+      //       $('[fill]').removeAttr('fill');
+      //       $('[stroke]').removeAttr('stroke');
+      //       $('[style]').removeAttr('style');
+      //     },
+      //     parserOptions: { xmlMode: true }
+      //   })
+      // )
       // cheerio plugin create unnecessary string '&gt;', so replace it.
       .pipe(replace('&gt;', '>'))
       // build svg sprite

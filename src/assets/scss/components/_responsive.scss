@@ -1,0 +1,6 @@
+@include breakpoint(medium) {
+  .advantages-row {
+    padding-left: rem-calc(10);
+    padding-right: rem-calc(10);
+  }
+}

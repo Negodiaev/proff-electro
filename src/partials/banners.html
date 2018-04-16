@@ -1,59 +1,52 @@
 <div class="banners section">
-  <div class="row">
-    <div class="large-4 columns">
-      <div class="banner">
-        <div class="info">
-          <h3 class="title">Скидки на лампы</h3>
-          <div class="description">Подпись по заголовком</div>
-          <button class="button">Подробнее</button>
-        </div>
-        <div class="picture">
-          <img src="assets/img/banners/1.jpg" alt="">
-        </div>
-      </div>
-      <div class="banner">
-        <div class="info">
-          <h3 class="title">Батарейки</h3>
-          <div class="description">Подпись по заголовком</div>
-          <button class="button">Подробнее</button>
-        </div>
-        <div class="picture">
-          <img src="assets/img/banners/2.png" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="large-8 columns">
+  <div class="row" data-equalizer data-equalize-on="large">
+    <div class="large-8 columns large-push-4">
       <div class="banner-slider swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="banner">
-              <div class="info">
-                <div class="title">Скидки
-                  <br> на кабель</div>
-                <div class="description">Существуют две основные трактовки понятия &quot;текст&quot;: &quot;имманентная&quot;</div>
-                <button class="button">Подробнее</button>
-              </div>
-              <div class="picture">
+            <div class="banner flex-container flex-dir-column medium-flex-dir-row" data-equalizer-watch>
+              <div class="banner-picture medium-order-2">
                 <img src="assets/img/banners/3.png" alt="">
+              </div>
+              <div class="banner-info medium-order-1">
+                <div class="banner-title">Скидки
+                  <br> на кабель</div>
+                <div class="banner-description">Существуют две основные трактовки понятия &quot;текст&quot;: &quot;имманентная&quot;</div>
+                <a href="#" class="button">Подробнее</a>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="banner">
-              <div class="info">
-                <div class="title">Скидки
-                  <br> на кабель</div>
-                <div class="description">Существуют две основные трактовки понятия &quot;текст&quot;: &quot;имманентная&quot;</div>
-                <button class="button">Подробнее</button>
-              </div>
-              <div class="picture">
-                <img src="assets/img/banners/3.png" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide" data-equalizer-watch>Slide 2</div>
         </div>
         <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="large-4 columns large-pull-8" data-equalizer-watch>
+      <div class="row text-center large-text-left">
+        <div class="medium-6 large-12 columns">
+          <div class="banner flex-container flex-dir-column large-flex-dir-row">
+            <div class="banner-picture large-order-2">
+              <img src="assets/img/banners/1.jpg" alt="">
+            </div>
+            <div class="banner-info medium-order-1">
+              <h3 class="banner-title">Скидки на лампы</h3>
+              <div class="banner-description">Подпись по заголовком</div>
+              <a href="#" class="button">Подробнее</a>
+            </div>
+          </div>
+        </div>
+        <div class="medium-6 large-12 columns">
+          <div class="banner flex-container flex-dir-column large-flex-dir-row">
+            <div class="banner-picture large-order-2">
+              <img src="assets/img/banners/2.png" alt="">
+            </div>
+            <div class="banner-info medium-order-1">
+              <h3 class="banner-title">Батарейки</h3>
+              <div class="banner-description">Подпись по заголовком</div>
+              <a href="#" class="button">Подробнее</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
