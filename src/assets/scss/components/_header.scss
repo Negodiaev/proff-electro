@@ -1,5 +1,137 @@
+.header {
+  position: relative;
+  z-index: 10;
+  padding-top: rem-calc(10);
+  font-size: rem-calc(14);
+  box-shadow: 1.8px 0.9px 3px rgba(0, 0, 0, 0.1);
+  .burger {
+    margin-bottom: rem-calc(10);
+  }
+  .logo {
+    margin-bottom: rem-calc(10);
+  }
+  .callback-phone {
+    margin-bottom: rem-calc(10);
+  }
+  .callback-order {
+    border-bottom: 1px solid get-color(text);
+    transition: border-color 0.15s ease;
+    &:hover {
+      border-color: transparent;
+      color: get-color(text);
+    }
+  }
+  .cart-status {
+    padding-top: rem-calc(5);
+  }
+}
+
+.logo,
+.callback {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.logo {
+  img {
+    display: block;
+  }
+}
+
+.callback {
+  line-height: 1;
+}
+
+.callback-phone {
+  font-weight: 600;
+  &:hover {
+    color: get-color(text);
+  }
+  .icon {
+    fill: $primary-color;
+  }
+}
+
+.callback-phone-text {
+  font-size: rem-calc(23);
+}
+
 .userbar {
   .button {
+    padding: rem-calc(10 12);
+    border-right: 1px solid $medium-gray;
     background-color: transparent;
+    &:first-child {
+      border-left: 1px solid $medium-gray;
+    }
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+.cart-status-button {
+  padding: 0;
+  line-height: unitless-calc(18, 14);
+  background-color: transparent;
+  .icon {
+    margin-right: rem-calc(14);
+  }
+  &:hover {
+    color: $secondary-color;
+    background-color: transparent;
+  }
+}
+
+.mega-menu-container {
+  background-color: $primary-color;
+  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .icon {
+    margin-left: rem-calc(20);
+  }
+  .mega-menu {
+    li {
+      &:hover {
+        & > a {
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}
+
+.mega-menu-toggle {
+  font-size: rem-calc(15);
+  font-weight: 600;
+  & > a {
+    background-color: $primary-color;
+    &:hover {
+      color: get-color(text);
+      background-color: scale-color($primary-color, $lightness: -15%);
+    }
+  }
+}
+
+.mega-menu {
+  ul {
+    width: 100%;
+  }
+  li {
+    flex: 1 0 100%;
+    &:hover {
+      color: red;
+    }
+  }
+  a {
+    flex-grow: 1;
+  }
+  .icon {
+    transform: rotate(90deg);
   }
 }
