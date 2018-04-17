@@ -54,6 +54,26 @@ svg {
   fill: currentColor;
 }
 
+.section {
+}
+
+.section-white {
+  background-color: $white;
+}
+.section-light {
+  background-color: get-color(light);
+}
+.section-dark {
+  color: $white;
+  background-color: get-color(text);
+  a {
+    color: $white;
+  }
+}
+.section-secondary {
+  background-color: $secondary-color;
+}
+
 .content-card {
   background-color: #fff;
 }

@@ -67,22 +67,24 @@
 
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
-$global-lineheight: 1.5;
+$global-lineheight: 1.25;
 $foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
+  primary: #fecc2f,
+  secondary: #3eaeb7,
   success: #3adb76,
   warning: #ffae00,
-  alert: #cc4b37
+  alert: #cc4b37,
+  /* custom colors*/ text: #2a4244,
+  light: #f2f6f6
 );
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$light-gray: #f7f7f7;
+$medium-gray: #eaeaea;
+$dark-gray: #879495;
+$black: #000;
+$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -90,8 +92,8 @@ $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
 $global-radius: 0;
-$global-menu-padding: 0.7rem 1rem;
-$global-menu-nested-margin: 1rem;
+$global-menu-padding: 1rem 1.25rem;
+$global-menu-nested-margin: 1rem; // to do
 $global-text-direction: ltr;
 $global-flexbox: true;
 $global-prototype-breakpoints: false;
@@ -131,37 +133,37 @@ $block-grid-max: 8;
 // ------------------
 
 $header-font-family: $body-font-family;
-$header-font-weight: $global-weight-normal;
+$header-font-weight: 600;
 $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
-$header-color: inherit;
-$header-lineheight: 1.4;
+$header-color: get-color(text);
+$header-lineheight: 1.25;
 $header-margin-bottom: 0.5rem;
 $header-styles: (
-  small:
+  small: /* to do*/
     (
-      'h1': ('font-size': 24),
-      'h2': ('font-size': 20),
-      'h3': ('font-size': 19),
+      'h1': ('font-size': 26),
+      'h2': ('font-size': 22),
+      'h3': ('font-size': 20),
       'h4': ('font-size': 18),
       'h5': ('font-size': 17),
       'h6': ('font-size': 16)
     ),
   medium:
     (
-      'h1': ('font-size': 48),
-      'h2': ('font-size': 40),
-      'h3': ('font-size': 31),
-      'h4': ('font-size': 25),
-      'h5': ('font-size': 20),
+      'h1': ('font-size': 36),
+      'h2': ('font-size': 28),
+      'h3': ('font-size': 23),
+      'h4': ('font-size': 20),
+      'h5': ('font-size': 17),
       'h6': ('font-size': 16)
     )
 );
 $header-text-rendering: optimizeLegibility;
-$small-font-size: 80%;
+$small-font-size: 81.25%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.6;
-$paragraph-margin-bottom: 1rem;
+$paragraph-lineheight: 1.75;
+$paragraph-margin-bottom: 1.75rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -169,8 +171,8 @@ $code-font-weight: $global-weight-normal;
 $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
-$anchor-color: $primary-color;
-$anchor-color-hover: scale-color($anchor-color, $lightness: -14%);
+$anchor-color: get-color(text);
+$anchor-color-hover: $secondary-color;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -178,8 +180,8 @@ $hr-border: 1px solid $medium-gray;
 $hr-margin: rem-calc(20) auto;
 $list-lineheight: $paragraph-lineheight;
 $list-margin-bottom: $paragraph-margin-bottom;
-$list-style-type: disc;
-$list-style-position: outside;
+$list-style-type: none;
+$list-style-position: inside;
 $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
@@ -281,32 +283,32 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.85em 1em;
-$button-margin: 0 0 $global-margin 0;
+$button-padding: 0.5em 1em;
+$button-margin: 0 0;
 $button-fill: solid;
 $button-background: $primary-color;
 $button-background-hover: scale-color($button-background, $lightness: -15%);
-$button-color: $white;
-$button-color-alt: $black;
+$button-color: get-color(text);
+$button-color-alt: $white;
 $button-radius: $global-radius;
 $button-hollow-border-width: 1px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem
+  default: rem-calc(14),
+  large: rem-calc(17)
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-transition: background-color 0.15s ease-out, color 0.15s ease-out;
 
 // 12. Button Group
 // ----------------
 
 $buttongroup-margin: 1rem;
-$buttongroup-spacing: 1px;
+$buttongroup-spacing: 0;
 $buttongroup-child-selector: '.button';
 $buttongroup-expand-max: 6;
 $buttongroup-radius-on-each: true;
@@ -329,12 +331,12 @@ $callout-link-tint: 30%;
 
 $card-background: $white;
 $card-font-color: $body-font-color;
-$card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-divider-background: #f2f6f6;
+$card-border: 0 solid $medium-gray;
 $card-shadow: none;
 $card-border-radius: $global-radius;
-$card-padding: $global-padding;
-$card-margin-bottom: $global-margin;
+$card-padding: rem-calc(30);
+$card-margin-bottom: 0;
 
 // 15. Close Button
 // ----------------
@@ -387,7 +389,7 @@ $dropdown-sizes: (
 // 18. Dropdown Menu
 // -----------------
 
-$dropdownmenu-arrows: true;
+$dropdownmenu-arrows: false;
 $dropdownmenu-arrow-color: $anchor-color;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
@@ -423,9 +425,9 @@ $input-prefix-background: $light-gray;
 $input-prefix-border: 1px solid $medium-gray;
 $input-prefix-padding: 1rem;
 $form-label-color: $black;
-$form-label-font-size: rem-calc(14);
+$form-label-font-size: rem-calc(16);
 $form-label-font-weight: $global-weight-normal;
-$form-label-line-height: 1.8;
+$form-label-line-height: 1.5;
 $select-background: $white;
 $select-triangle-color: $dark-gray;
 $select-radius: $global-radius;
@@ -438,16 +440,16 @@ $input-line-height: $global-lineheight;
 $input-background: $white;
 $input-background-focus: $white;
 $input-background-disabled: $light-gray;
-$input-border: 1px solid $medium-gray;
+$input-border: 1px solid #d9d9d9;
 $input-border-focus: 1px solid $dark-gray;
-$input-padding: $form-spacing / 2;
+$input-padding: rem-calc(13);
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-transition: box-shadow 0.4s, border-color 0.2s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;
-$form-button-radius: $global-radius;
+$form-button-radius: 3px;
 
 // 21. Label
 // ---------
@@ -474,8 +476,8 @@ $menu-margin: 0;
 $menu-nested-margin: $global-menu-nested-margin;
 $menu-items-padding: $global-menu-padding;
 $menu-simple-margin: 1rem;
-$menu-item-color-active: $white;
-$menu-item-background-active: get-color(primary);
+$menu-item-color-active: get-color(text);
+$menu-item-background-active: $primary-color;
 $menu-icon-spacing: 0.25rem;
 $menu-item-background-hover: $light-gray;
 $menu-state-back-compat: true;
@@ -505,7 +507,7 @@ $offcanvas-overlay-zindex: 11;
 $offcanvas-push-zindex: 12;
 $offcanvas-overlap-zindex: 13;
 $offcanvas-reveal-zindex: 12;
-$offcanvas-transition-length: 0.5s;
+$offcanvas-transition-length: 0.4s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
@@ -827,17 +829,17 @@ $titlebar-icon-spacing: 0.25rem;
 // 54. Tooltip
 // -----------
 
-$has-tip-cursor: help;
+$has-tip-cursor: pointer;
 $has-tip-font-weight: $global-weight-bold;
-$has-tip-border-bottom: dotted 1px $dark-gray;
-$tooltip-background-color: $black;
+$has-tip-border-bottom: 0;
+$tooltip-background-color: $secondary-color;
 $tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-padding: 0.33rem 1rem;
 $tooltip-max-width: 10rem;
 $tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
+$tooltip-pip-width: rem-calc(7);
 $tooltip-pip-height: $tooltip-pip-width * 0.866;
-$tooltip-radius: $global-radius;
+$tooltip-radius: 2px;
 
 // 55. Top Bar
 // -----------
