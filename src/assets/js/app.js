@@ -18,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function(event) {
     // Optional parameters
     loop: true,
     pagination: {
-      el: '.banner-slider .swiper-pagination'
+      el: '.banner-slider .swiper-pagination',
+      clickable: true
     }
   });
 

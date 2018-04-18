@@ -1,4 +1,116 @@
+.banners {
+  padding-bottom: 0;
+  .banner {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.banners-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.banners-col {
+  flex: 1 1 auto;
+}
+
+.banner-slider-wrapper {
+  height: 100%;
+}
+
+.banner {
+  font-size: rem-calc(14);
+  line-height: unitless-calc(24, 14);
+  background-color: $white;
+}
+
+.banner-primary {
+  font-size: rem-calc(16);
+  background-color: #fbc500;
+  .banner-info {
+    .banner-title {
+      margin-bottom: rem-calc(20);
+    }
+    p {
+      margin-bottom: rem-calc(22);
+    }
+  }
+  .banner-title {
+    font-size: rem-calc(32);
+    line-height: unitless-calc(61, 50);
+    font-weight: 800;
+    color: $white;
+    text-shadow: 1.9px 0.5px 0 rgba(0, 0, 0, 0.13);
+  }
+}
+
+.banner-secondary {
+  color: $white;
+  background-color: $secondary-color;
+  .banner-title {
+    color: $white;
+  }
+}
+
 .banner-slider {
   width: 100%;
   height: 100%;
+  .swiper-pagination {
+    bottom: rem-calc(30);
+    left: rem-calc(16);
+    text-align: left;
+    .swiper-pagination-bullet {
+      width: rem-calc(10);
+      height: rem-calc(10);
+      border: 2px solid $white;
+      border-radius: 50%;
+      opacity: 1;
+      background-color: transparent;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: $white;
+    }
+  }
+}
+
+.banner-info {
+  padding: rem-calc(20);
+  .banner-title {
+    margin-bottom: rem-calc(5);
+  }
+  .banner-subtitle {
+    margin-bottom: rem-calc(15);
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+.banner-title {
+  font-weight: 400;
+}
+
+.banner-button {
+  width: rem-calc(150);
+  border: 0;
+  border-radius: 3px;
+  line-height: unitless-calc(24, 14);
+  font-weight: 600;
+  background-color: $white;
+  &:hover {
+    background-color: scale-color($white, $lightness: -4%);
+  }
+  &.banner-button-primary {
+    width: rem-calc(200);
+    font-weight: 700;
+    color: $black;
+  }
+
+  &.banner-button-secondary {
+    color: $white;
+    &:hover {
+      color: $white;
+      background-color: scale-color($secondary-color, $lightness: -10%);
+    }
+  }
 }

@@ -78,6 +78,15 @@
   }
 }
 
+@include breakpoint(medium only) {
+  .banners-col-small {
+    display: flex;
+    .banner {
+      width: 50%;
+    }
+  }
+}
+
 @include breakpoint(medium) {
   .header {
     padding-top: rem-calc(20);
@@ -148,6 +157,57 @@
       background-color: #f2f7f7;
     }
   }
+  .banner-primary {
+    position: relative;
+    height: rem-calc(448);
+    .banner-picture {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      img {
+        display: block;
+        width: 100%;
+        max-width: none;
+      }
+    }
+    .banner-info {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      .banner-title {
+        margin-bottom: rem-calc(30);
+      }
+      p {
+        margin-bottom: rem-calc(34);
+      }
+    }
+    .banner-title {
+      font-size: rem-calc(40);
+    }
+  }
+  .banner-slider {
+    .swiper-pagination {
+      left: rem-calc(24);
+      z-index: 2;
+    }
+  }
+  .banner-info {
+    padding: rem-calc(20 20 28 28);
+    .banner-title {
+      margin-bottom: rem-calc(10);
+    }
+    .banner-subtitle {
+      margin-bottom: rem-calc(25);
+    }
+  }
+  .banner-button {
+    &.banner-button-primary {
+      width: rem-calc(230);
+    }
+  }
   .advantages-row {
     padding-left: rem-calc(10);
     padding-right: rem-calc(10);
@@ -204,6 +264,71 @@
       }
     }
   }
+  .section {
+    padding-top: rem-calc(20);
+    padding-bottom: rem-calc(20);
+  }
+  .banners {
+    .banner {
+      margin-bottom: rem-calc(20);
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .banners-grid {
+    flex-direction: row;
+  }
+  .banners-col {
+    padding: 0 rem-calc(10);
+  }
+  .banners-col-big {
+    order: 2;
+    width: 66.6666%;
+  }
+  .banners-col-small {
+    order: 1;
+    width: 33.3333%;
+  }
+  .banner-primary {
+    .banner-info {
+      flex-grow: 0;
+      padding-left: rem-calc(65);
+      .banner-title {
+        margin-bottom: rem-calc(40);
+        font-size: rem-calc(50);
+      }
+      p {
+        margin-bottom: rem-calc(46);
+      }
+    }
+  }
+  .banner-slider {
+    .banner {
+      height: 100%;
+    }
+    .swiper-pagination {
+      left: rem-calc(61);
+    }
+  }
+  .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-grow: 1;
+    padding-right: 0;
+    .banner-title {
+      margin-bottom: rem-calc(15);
+    }
+    .banner-subtitle {
+      margin-bottom: rem-calc(35);
+    }
+  }
+  .banner-default {
+    .banner-picture {
+      padding-right: rem-calc(20);
+    }
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -212,5 +337,9 @@
     .callback {
       padding-left: rem-calc(62);
     }
+  }
+  .banners {
+    padding-top: rem-calc(55);
+    padding-bottom: rem-calc(55);
   }
 }
