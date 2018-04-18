@@ -1,3 +1,14 @@
+@include breakpoint(medium down) {
+  .mega-menu-container {
+    .mega-menu {
+      a {
+        padding-top: rem-calc(14);
+        padding-bottom: rem-calc(14);
+      }
+    }
+  }
+}
+
 @include breakpoint(small only) {
   .header {
     .logo,
@@ -24,6 +35,47 @@
       }
     }
   }
+  .navigation {
+    li {
+      &:not(:last-child) {
+        border-bottom: 1px solid $medium-gray;
+      }
+    }
+    a {
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+    .more-menu {
+      .more-menu-toggle {
+        & > a {
+          color: $dark-gray;
+        }
+        &:hover {
+          & > a {
+            color: $secondary-color;
+          }
+        }
+      }
+    }
+  }
+  .more-menu,
+  .more-menu-toggle {
+    width: 100%;
+  }
+  .more-menu {
+    ul {
+      a {
+        background-color: $light-gray;
+      }
+    }
+  }
+  .more-menu-toggle {
+    .icon {
+      margin-left: rem-calc(4);
+      fill: red;
+    }
+  }
 }
 
 @include breakpoint(medium) {
@@ -33,11 +85,67 @@
       margin-bottom: rem-calc(20);
     }
   }
-  .mega-menu-container {
-    .mega-menu-toggle {
+  .navigation {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    max-width: rem-calc(466);
+    font-weight: 600;
+    & > li {
       & > a {
-        padding-left: rem-calc(34);
+        position: relative;
+        padding: 0;
+        border-bottom: 1px solid $dark-gray;
+        transition: border-color 0.15s ease;
+        &:hover {
+          border-color: transparent;
+        }
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: rem-calc(-23);
+          left: 0;
+          width: 100%;
+          height: 6px;
+          visibility: hidden;
+          background-color: transparent;
+          transition: background-color 0.25s ease;
+        }
+        &:hover {
+          &:after {
+            visibility: visible;
+            background-color: $primary-color;
+          }
+        }
       }
+    }
+    .more-menu {
+      .more-menu-toggle {
+        & > a {
+          padding: rem-calc(13);
+        }
+      }
+    }
+  }
+  .more-menu {
+    .more-menu-toggle {
+      &.is-active {
+        & > a {
+          background-color: #f2f7f7;
+        }
+      }
+    }
+    ul {
+      li {
+        &:not(:last-child) {
+          border-bottom: 1px solid $medium-gray;
+        }
+      }
+    }
+  }
+  .more-menu-toggle {
+    & > a {
+      background-color: #f2f7f7;
     }
   }
   .advantages-row {
@@ -64,6 +172,36 @@
     .button {
       padding-left: rem-calc(25);
       padding-right: rem-calc(25);
+    }
+  }
+  .mega-menu-container {
+    .mega-menu-toggle {
+      & > a {
+        padding-left: rem-calc(34);
+        padding-right: rem-calc(25);
+      }
+    }
+    .mega-menu {
+      a {
+        padding-right: rem-calc(8);
+      }
+    }
+  }
+  .mega-menu {
+    li {
+      position: static;
+      &:not(:last-child) {
+        border-bottom: 1px solid $medium-gray;
+      }
+    }
+  }
+  .navigation {
+    justify-content: flex-end;
+    max-width: none;
+    & > li {
+      &:not(:first-child) {
+        margin-left: rem-calc(35);
+      }
     }
   }
 }
