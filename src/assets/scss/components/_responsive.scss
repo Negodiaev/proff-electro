@@ -268,6 +268,9 @@
     padding-top: rem-calc(20);
     padding-bottom: rem-calc(20);
   }
+  .title-block {
+    margin-bottom: rem-calc(20);
+  }
   .banners {
     .banner {
       margin-bottom: rem-calc(20);
@@ -329,6 +332,15 @@
       padding-right: rem-calc(20);
     }
   }
+  .catalog {
+    padding-bottom: 0;
+    .column-block {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .goods {
+    padding-bottom: rem-calc(10);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -338,8 +350,51 @@
       padding-left: rem-calc(62);
     }
   }
+  .title-block {
+    margin-bottom: rem-calc(32);
+  }
   .banners {
     padding-top: rem-calc(55);
     padding-bottom: rem-calc(55);
+  }
+  .catalog {
+    padding-top: rem-calc(48);
+    padding-bottom: rem-calc(30);
+    .column-block {
+      margin-bottom: rem-calc(50);
+    }
+  }
+  .goods {
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(55);
+  }
+  .goods-slider-wrapper {
+    padding-bottom: 0;
+    .swiper-pagination {
+      bottom: rem-calc(-30);
+    }
+  }
+  .goods-item-price {
+    .button-cart {
+      margin-left: rem-calc(18);
+    }
+  }
+}
+
+@include breakpoint(80rem) {
+  .goods-slider-wrapper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: block;
+    }
+    .swiper-button-prev {
+      left: rem-calc(-40);
+    }
+    .swiper-button-next {
+      right: rem-calc(-40);
+    }
+    .swiper-pagination {
+      display: none;
+    }
   }
 }

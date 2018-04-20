@@ -25,23 +25,27 @@ document.addEventListener('DOMContentLoaded', function(event) {
 
   //------------------------------------------------------------------------//
   //Goods slider
-  var goodsSwiper = new Swiper('.goods-slider', {
+  var goodsSwiper = new Swiper('#goods-slider', {
     slidesPerView: 4,
     slidesPerGroup: 4,
     loop: true,
     autoHeight: true,
     // loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.goods-slider .swiper-button-next',
-      prevEl: '.goods-slider .swiper-button-prev'
+      nextEl: '#goods-slider-next',
+      prevEl: '#goods-slider-prev'
+    },
+    pagination: {
+      el: '#goods-slider-pagination',
+      clickable: true
     },
     breakpoints: {
-      480: {
+      544: {
         // when window width is <= 480px
         slidesPerView: 1,
         slidesPerGroup: 1
       },
-      640: {
+      768: {
         slidesPerView: 2,
         slidesPerGroup: 2
       },

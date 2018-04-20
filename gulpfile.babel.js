@@ -36,10 +36,7 @@ function loadConfig() {
 gulp.task('sprite', gulp.series(createSprite));
 
 // Build the "dist" folder by running all of the below tasks
-gulp.task(
-  'build',
-  gulp.series(clean, 'sprite', gulp.parallel(pages, sass, javascript, images, copy), styleGuide)
-);
+gulp.task('build', gulp.series(clean, 'sprite', gulp.parallel(pages, sass, javascript, images, copy)));
 
 // Turn the "dist" folder into the "docs" folder for Github Pages
 gulp.task('deploy', gulp.series(cleanDeploy, 'build', deploy));
@@ -249,5 +246,5 @@ function watch() {
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
   gulp.watch('src/assets/img/**/*.+(png|jpg|jpeg|gif|ico)').on('all', gulp.series(images, browser.reload));
   gulp.watch('src/assets/img/svg/*.svg').on('all', gulp.series(createSprite, browser.reload));
-  gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
+  // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

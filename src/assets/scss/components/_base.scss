@@ -47,6 +47,11 @@ body,
   height: 0;
 }
 
+a,
+button {
+  transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+}
+
 svg {
   display: inline-block;
   vertical-align: middle;
@@ -75,6 +80,40 @@ svg {
   background-color: $secondary-color;
 }
 
+.section-title {
+  font-weight: $global-weight-normal;
+}
+
+.title-block {
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(10 10 10 20);
+  background-color: get-color(light);
+}
+.title-block-secondary {
+  color: $white;
+  background-color: #4ec3cc;
+  .section-title,
+  .title-block-link {
+    color: inherit;
+  }
+}
+
+.title-block-link {
+  margin-left: rem-calc(20);
+  path {
+    fill: red;
+  }
+}
+
 .content-card {
   background-color: #fff;
+}
+
+.button-cart {
+  padding-top: rem-calc(7);
+  padding-bottom: rem-calc(7);
+  color: #746127;
+  &:hover {
+    color: #746127;
+  }
 }
