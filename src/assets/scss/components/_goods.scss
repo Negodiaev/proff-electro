@@ -4,12 +4,13 @@
   }
 }
 
-.goods-slider-wrapper {
+.content-slider-wrapper {
   position: relative;
   padding-bottom: rem-calc(30);
   .swiper-button-prev,
   .swiper-button-next {
     display: none;
+    top: 52%;
     width: rem-calc(19);
     height: rem-calc(33);
     outline: none;
@@ -26,6 +27,7 @@
       height: rem-calc(10);
       border: 2px solid $white;
       border-radius: 50%;
+      outline: 0;
       opacity: 1;
       background-color: transparent;
     }
@@ -51,7 +53,7 @@
     margin-bottom: rem-calc(15);
   }
   .goods-item-type {
-    margin-bottom: rem-calc(20);
+    margin-bottom: rem-calc(25);
   }
   .goods-item-price {
     margin-bottom: rem-calc(5);

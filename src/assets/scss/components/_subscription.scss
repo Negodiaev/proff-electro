@@ -1,0 +1,31 @@
+.subscription {
+  padding-top: 0;
+}
+
+.subscription-content {
+  padding: rem-calc(20 10);
+  .icon {
+    margin-bottom: rem-calc(20);
+  }
+  .subscription-title {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.subscription-form-item {
+  label {
+    margin-bottom: rem-calc(6);
+    padding: 0;
+  }
+}
+
+.subscription-button {
+  padding: rem-calc(12);
+  width: 100%;
+  line-height: unitless-calc(19, 17);
+  font-weight: 600;
+  color: #746127;
+  &:hover {
+    color: #746127;
+  }
+}

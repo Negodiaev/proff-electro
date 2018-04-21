@@ -56,10 +56,11 @@
   width: 100%;
   height: 100%;
   .swiper-pagination {
-    bottom: rem-calc(30);
+    bottom: rem-calc(22);
     left: rem-calc(16);
     text-align: left;
     .swiper-pagination-bullet {
+      margin: 0 rem-calc(5);
       width: rem-calc(10);
       height: rem-calc(10);
       border: 2px solid $white;

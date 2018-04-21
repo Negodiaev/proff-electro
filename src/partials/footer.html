@@ -1,7 +1,7 @@
-<footer class="footer section-dark">
-  <div class="row text-center" data-equalizer="footer" data-equalize-on="medium">
-    <div class="large-6 large-push-3 columns">
-      <div class="contact">
+<footer class="footer section-dark" data-equalizer="footer-large" data-equalize-on="large">
+  <div class="row text-center" data-equalizer="footer-medium" data-equalize-on="medium">
+    <div class="contact-wrapper large-6 large-push-3 columns">
+      <div class="contact" data-equalizer-watch="footer-large">
         <div class="contact-title">Остались вопросы? Звоните!</div>
         <div class="footer-callback callback">
           <a href="tel:+78003422588" class="callback-phone">8-800-342-2588</a>
@@ -9,36 +9,29 @@
           <a href="#" class="callback-order">Заказать обратный звонок</a>
         </div>
         <div class="scl">
-          <div>Отзывы и предложения</div>
-          <ul class="scl-menu menu align-center">
-            <li>
-              <a href="#">
-                <svg class="icon" width="38" height="20">
-                  <use xlink:href="#vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="assets/img/icons/okl.png" alt="">
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg class="icon" width="18" height="31">
-                  <use xlink:href="#fcb"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          <h4 class="scl-title">Отзывы и предложения</h4>
+          <div class="scl-menu small button-group align-center align-middle">
+            <a href="#" class="button">
+              <svg class="icon" width="38" height="20">
+                <use xlink:href="#vk"></use>
+              </svg>
+            </a>
+            <a href="#" class="button">
+              <img src="assets/img/icons/okl.png" alt="">
+            </a>
+            <a href="#" class="button">
+              <svg class="icon" width="18" height="31">
+                <use xlink:href="#fcb"></use>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-    <div class="medium-6 medium-push-6 large-3 large-push-3 columns medium-text-right large-text-left">
-      <div class="footer-column flex-container flex-dir-column align-justify" data-equalizer-watch="footer">
+    <div class="medium-5 medium-push-6 large-3 large-push-3 columns medium-text-right large-text-left" data-equalizer-watch="footer-large">
+      <div class="payment-column footer-column flex-container flex-dir-column align-justify" data-equalizer-watch="footer-medium">
         <div class="payment">
-          Принимаем к оплате
-          <br>
+          <div class="payment-title">Принимаем к оплате</div>
           <ul class="payment-menu menu simple align-center">
             <li>
               <img src="assets/img/icons/mir.png" alt="">
@@ -57,8 +50,8 @@
         </div>
       </div>
     </div>
-    <div class="medium-6 medium-pull-6 large-3 large-pull-9 columns medium-text-left">
-      <div class="footer-column" data-equalizer-watch="footer">
+    <div class="medium-5 medium-pull-6 large-3 large-pull-9 columns medium-text-left" data-equalizer-watch="footer-large">
+      <div class="footer-column" data-equalizer-watch="footer-medium">
         <ul class="footer-menu menu vertical">
           <li>
             <a href="#">Магазины</a>
@@ -83,7 +76,7 @@
           </li>
         </ul>
         <div class="copyright">
-          <div class="hide-for-medium">
+          <div class="copyright-item hide-for-medium">
             <a href="#">&quot;Рецепты Рекламы&quot;</a>
             <br>создание и разработка сайта
           </div>

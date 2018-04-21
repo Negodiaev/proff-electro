@@ -1,4 +1,9 @@
-html,
+// for pixelperfect
+.chromeperfectpixel-portal img.chromeperfectpixel-overlay {
+  display: block !important;
+}
+
+// html,
 body,
 .off-canvas-wrapper,
 .off-canvas-content {
@@ -86,7 +91,7 @@ svg {
 
 .title-block {
   margin-bottom: rem-calc(10);
-  padding: rem-calc(10 10 10 20);
+  padding: rem-calc(13 10 13 20);
   background-color: get-color(light);
 }
 .title-block-secondary {

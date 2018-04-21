@@ -61,20 +61,24 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //Articles slider
   var articlesSwiper = new Swiper('.articles-slider', {
     slidesPerView: 2,
-    spaceBetween: 20,
     slidesPerGroup: 2,
+    spaceBetween: 20,
     loop: true,
     autoHeight: true,
     // loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.articles-slider .swiper-button-next',
-      prevEl: '.articles-slider .swiper-button-prev'
+      nextEl: '#articles-slider-next',
+      prevEl: '#articles-slider-prev'
+    },
+    pagination: {
+      el: '#articles-slider-pagination',
+      clickable: true
     },
     breakpoints: {
-      640: {
+      1023: {
         // when window width is <= 640px
         slidesPerView: 1,
-        slidesPerGroup: 2
+        slidesPerGroup: 1
       }
     }
   });

@@ -7,6 +7,10 @@
       }
     }
   }
+  .contact-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @include breakpoint(small only) {
@@ -73,7 +77,30 @@
   .more-menu-toggle {
     .icon {
       margin-left: rem-calc(4);
-      fill: red;
+    }
+  }
+  .articles-item {
+    .articles-item-title {
+      margin-bottom: rem-calc(10);
+    }
+  }
+  .articles-item-info,
+  .about-content {
+    font-size: rem-calc(15);
+  }
+  .articles-item-info {
+    padding: rem-calc(12 18 18);
+    p {
+      margin-bottom: rem-calc(16);
+    }
+  }
+  .about-content {
+    padding: rem-calc(30 18 20);
+    .about-title {
+      margin-bottom: rem-calc(15);
+    }
+    p {
+      margin-bottom: rem-calc(16);
     }
   }
 }
@@ -92,6 +119,11 @@
     padding-top: rem-calc(20);
     .logo {
       margin-bottom: rem-calc(20);
+    }
+  }
+  .navigation-wrap {
+    &:after {
+      display: block;
     }
   }
   .navigation {
@@ -176,6 +208,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-bottom: rem-calc(30);
       width: 50%;
       .banner-title {
         margin-bottom: rem-calc(30);
@@ -195,7 +228,7 @@
     }
   }
   .banner-info {
-    padding: rem-calc(20 20 28 28);
+    padding: rem-calc(20 20 22 28);
     .banner-title {
       margin-bottom: rem-calc(10);
     }
@@ -205,12 +238,33 @@
   }
   .banner-button {
     &.banner-button-primary {
-      width: rem-calc(230);
+      padding-top: rem-calc(13);
+      padding-bottom: rem-calc(13);
+      width: rem-calc(200);
     }
   }
   .advantages-row {
     padding-left: rem-calc(10);
     padding-right: rem-calc(10);
+  }
+  .advantages-item {
+    border-bottom-width: 0;
+  }
+  .subscription-form-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem-calc(550);
+  }
+  .footer-menu {
+    li {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .footer {
+    .payment-menu {
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -225,6 +279,9 @@
     }
     .cart-status-button {
       margin-left: auto;
+    }
+    .userbar {
+      margin-bottom: rem-calc(47);
     }
   }
   .userbar {
@@ -260,7 +317,7 @@
     max-width: none;
     & > li {
       &:not(:first-child) {
-        margin-left: rem-calc(35);
+        margin-left: rem-calc(34);
       }
     }
   }
@@ -273,7 +330,7 @@
   }
   .banners {
     .banner {
-      margin-bottom: rem-calc(20);
+      margin-bottom: rem-calc(24);
       &:last-child {
         margin-bottom: 0;
       }
@@ -292,18 +349,35 @@
   .banners-col-small {
     order: 1;
     width: 33.3333%;
+    .banner-info {
+      .banner-title,
+      .banner-subtitle {
+        padding-left: rem-calc(6);
+      }
+    }
   }
   .banner-primary {
     .banner-info {
       flex-grow: 0;
       padding-left: rem-calc(65);
       .banner-title {
-        margin-bottom: rem-calc(40);
+        margin-bottom: rem-calc(31);
         font-size: rem-calc(50);
       }
       p {
         margin-bottom: rem-calc(46);
+        padding-right: rem-calc(30);
       }
+    }
+  }
+  .banner-default {
+    .banner-picture {
+      padding-right: rem-calc(28);
+    }
+  }
+  .banner-secondary {
+    .banner-picture {
+      padding-right: rem-calc(4);
     }
   }
   .banner-slider {
@@ -321,15 +395,10 @@
     flex-grow: 1;
     padding-right: 0;
     .banner-title {
-      margin-bottom: rem-calc(15);
+      margin-bottom: rem-calc(8);
     }
     .banner-subtitle {
-      margin-bottom: rem-calc(35);
-    }
-  }
-  .banner-default {
-    .banner-picture {
-      padding-right: rem-calc(20);
+      margin-bottom: rem-calc(28);
     }
   }
   .catalog {
@@ -340,6 +409,101 @@
   }
   .goods {
     padding-bottom: rem-calc(10);
+  }
+  .advantages-item {
+    border-right-width: 1px;
+  }
+  .articles,
+  .about,
+  .subscription {
+    padding-top: 0;
+  }
+  .subscription-content {
+    padding: rem-calc(72 100 78);
+    .icon {
+      margin-bottom: rem-calc(26);
+    }
+    .subscription-title {
+      margin-bottom: rem-calc(64);
+    }
+  }
+  .subscription-form-container {
+    display: flex;
+    max-width: none;
+  }
+  .subscription-form-item {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    margin-right: rem-calc(15);
+    &:not(:last-child) {
+      padding-left: rem-calc(10);
+    }
+    &:first-child {
+      margin-right: rem-calc(36);
+    }
+    &:nth-child(2) {
+      margin-right: rem-calc(20);
+    }
+    &:last-child {
+      max-width: rem-calc(220);
+    }
+    label,
+    input {
+      margin-bottom: 0;
+    }
+    label {
+      margin-right: rem-calc(10);
+    }
+  }
+  .footer {
+    .callback-phone {
+      margin-bottom: rem-calc(18);
+      font-size: rem-calc(30);
+    }
+    .callback-order {
+      margin-bottom: rem-calc(58);
+    }
+    .payment {
+      padding-top: rem-calc(56);
+    }
+    .payment-title {
+      margin-bottom: rem-calc(30);
+    }
+    .payment-menu {
+      justify-content: flex-start;
+    }
+    .footer-menu {
+      margin-bottom: rem-calc(24);
+    }
+  }
+  .footer-menu {
+    padding-top: rem-calc(54);
+    li {
+      padding-top: rem-calc(14);
+      padding-bottom: rem-calc(15);
+    }
+  }
+  .contact {
+    padding-top: rem-calc(82);
+    .contact-title {
+      margin-bottom: rem-calc(72);
+    }
+  }
+  .contact-title {
+    font-size: rem-calc(30);
+  }
+  .scl {
+    .scl-title {
+      margin-bottom: rem-calc(24);
+    }
+  }
+  .scl-menu {
+    .button {
+      padding-top: rem-calc(23);
+      padding-bottom: rem-calc(23);
+      width: rem-calc(100);
+    }
   }
 }
 
@@ -352,21 +516,22 @@
   }
   .title-block {
     margin-bottom: rem-calc(32);
+    padding-left: rem-calc(33);
   }
   .banners {
     padding-top: rem-calc(55);
-    padding-bottom: rem-calc(55);
+    padding-bottom: rem-calc(58);
   }
   .catalog {
     padding-top: rem-calc(48);
-    padding-bottom: rem-calc(30);
+    padding-bottom: rem-calc(34);
     .column-block {
-      margin-bottom: rem-calc(50);
+      margin-bottom: rem-calc(45);
     }
   }
   .goods {
-    padding-top: rem-calc(50);
-    padding-bottom: rem-calc(55);
+    padding-top: rem-calc(48);
+    padding-bottom: rem-calc(58);
   }
   .goods-slider-wrapper {
     padding-bottom: 0;
@@ -376,13 +541,37 @@
   }
   .goods-item-price {
     .button-cart {
-      margin-left: rem-calc(18);
+      margin-left: rem-calc(13);
+    }
+  }
+  .advantages {
+    padding-top: rem-calc(90);
+    padding-bottom: rem-calc(100);
+  }
+  .articles {
+    padding-bottom: rem-calc(30);
+  }
+  .articles-item-info {
+    p {
+      max-height: rem-calc(85);
+      overflow-y: hidden;
+    }
+  }
+  .about {
+    padding-bottom: rem-calc(40);
+  }
+  .subscription {
+    padding-bottom: rem-calc(82);
+  }
+  .footer {
+    .payment-column {
+      padding-left: rem-calc(44);
     }
   }
 }
 
 @include breakpoint(80rem) {
-  .goods-slider-wrapper {
+  .content-slider-wrapper {
     .swiper-button-prev,
     .swiper-button-next {
       display: block;

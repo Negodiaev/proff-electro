@@ -1,3 +1,117 @@
 .footer {
   background-color: #2a4244;
+  .callback-phone {
+    margin-bottom: rem-calc(10);
+    font-size: rem-calc(24);
+    line-height: unitless-calc(32, 30);
+    &:hover {
+      color: $white;
+    }
+  }
+  .callback-order {
+    margin-bottom: rem-calc(30);
+    border-bottom: 1px solid #6fecf6;
+    line-height: 1;
+    white-space: nowrap;
+    color: #6fecf6;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+  .payment {
+    padding-top: rem-calc(20);
+  }
+  .payment-title {
+    margin-bottom: rem-calc(10);
+    line-height: unitless-calc(40, 16);
+    white-space: nowrap;
+  }
+  .payment-menu {
+    margin-bottom: rem-calc(15);
+    flex-wrap: nowrap;
+    li {
+      &:not(:first-child) {
+        margin-left: rem-calc(25);
+      }
+    }
+  }
+  .footer-menu {
+    margin-bottom: rem-calc(30);
+  }
+  .copyright {
+    padding-bottom: rem-calc(30);
+  }
+  .copyright-item {
+    margin-bottom: rem-calc(12);
+  }
+}
+
+.contact {
+  padding-top: rem-calc(40);
+  padding-bottom: rem-calc(30);
+  background-color: rgba(#3b6a6e, 0.23);
+  .contact-title {
+    margin-bottom: rem-calc(30);
+  }
+}
+
+.contact-title {
+  font-size: rem-calc(24);
+  line-height: unitless-calc(32, 30);
+  font-weight: 300;
+}
+
+.scl {
+  .scl-title {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.scl-title {
+  line-height: unitless-calc(32, 20);
+  color: rgba($white, 0.6);
+}
+
+.scl-menu {
+  .button {
+    width: rem-calc(92);
+    background-color: transparent;
+    &:not(:last-child) {
+      border-right: 1px solid #3c5c5f;
+    }
+  }
+}
+
+.footer-menu {
+  padding-top: rem-calc(22);
+  li {
+    padding: rem-calc(10);
+    line-height: 1;
+  }
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+    border-bottom: 1px solid $white;
+    white-space: nowrap;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.copyright {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(27, 15);
+  color: #7a989b;
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    border-bottom: 1px solid #7a989b;
+    line-height: 1;
+    color: #7a989b;
+    &:hover {
+      border-color: transparent;
+    }
+  }
 }
