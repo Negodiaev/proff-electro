@@ -151,7 +151,7 @@ $header-styles: (
     ),
   medium:
     (
-      'h1': ('font-size': 36),
+      'h1': ('font-size': 35),
       'h2': ('font-size': 28),
       'h3': ('font-size': 23),
       'h4': ('font-size': 20),
@@ -226,16 +226,16 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: whitesmoke;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
-$accordion-item-padding: 1.25rem 1rem;
+$accordion-title-font-size: rem-calc(15);
+$accordion-item-color: $body-font-color;
+$accordion-item-background-hover: whitesmoke;
+$accordion-item-padding: rem-calc(13 10 12 14);
 $accordion-content-background: $white;
-$accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $body-font-color;
-$accordion-content-padding: 1rem;
+$accordion-content-border: 0;
+$accordion-content-color: $black;
+$accordion-content-padding: rem-calc(0 17 10 10);
 
 // 8. Accordion Menu
 // -----------------
@@ -268,16 +268,16 @@ $badge-font-size: 0.6rem;
 // ---------------
 
 $breadcrumbs-margin: 0 0 $global-margin 0;
-$breadcrumbs-item-font-size: rem-calc(11);
-$breadcrumbs-item-color: $primary-color;
-$breadcrumbs-item-color-current: $black;
+$breadcrumbs-item-font-size: rem-calc(13);
+$breadcrumbs-item-color: $dark-gray;
+$breadcrumbs-item-color-current: $dark-gray;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
-$breadcrumbs-item-uppercase: true;
+$breadcrumbs-item-margin: rem-calc(2);
+$breadcrumbs-item-uppercase: false;
 $breadcrumbs-item-separator: true;
 $breadcrumbs-item-separator-item: '/';
 $breadcrumbs-item-separator-item-rtl: '\\';
-$breadcrumbs-item-separator-color: $medium-gray;
+$breadcrumbs-item-separator-color: $dark-gray;
 
 // 11. Button
 // ----------
@@ -454,12 +454,12 @@ $form-button-radius: 3px;
 // 21. Label
 // ---------
 
-$label-background: $primary-color;
-$label-color: $white;
+$label-background: $light-gray;
+$label-color: $dark-gray;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
+$label-font-size: rem-calc(14);
+$label-padding: rem-calc(8 20);
 $label-radius: $global-radius;
 
 // 22. Media Object
@@ -771,12 +771,12 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 0;
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
-$table-is-striped: true;
+$table-is-striped: false;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
 $table-head-background: smart-scale($table-background, $table-color-scale / 2);

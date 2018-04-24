@@ -8,6 +8,7 @@ import Foundation from 'foundation-sites';
 // the line below
 //import './lib/foundation-explicit-pieces';
 import Swiper from 'swiper/dist/js/swiper.js';
+import SimpleScrollbar from 'simple-scrollbar/simple-scrollbar.js';
 
 $(document).foundation();
 

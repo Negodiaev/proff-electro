@@ -1,0 +1,18 @@
+.breadcrumbs-wrapper {
+  padding: rem-calc(31 0 20);
+}
+.breadcrumbs {
+  font-weight: 600;
+  li {
+    line-height: 1;
+  }
+  a {
+    display: inline-block;
+    border-bottom: 1px solid $dark-gray;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      border-color: transparent;
+    }
+  }
+}

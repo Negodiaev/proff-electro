@@ -103,6 +103,25 @@
       margin-bottom: rem-calc(16);
     }
   }
+
+  // Inner page
+  .breadcrumbs-wrapper {
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(15);
+  }
+  .breadcrumbs {
+    margin-bottom: 0;
+    li {
+      display: block;
+      float: none;
+      &:not(:last-child) {
+        margin-bottom: rem-calc(8);
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(medium only) {

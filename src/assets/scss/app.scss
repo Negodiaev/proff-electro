@@ -14,7 +14,7 @@
 @include foundation-button;
 @include foundation-forms;
 // @include foundation-range-input;
-// @include foundation-accordion;
+@include foundation-accordion;
 // @include foundation-accordion-menu;
 // @include foundation-badge;
 @include foundation-breadcrumbs;
@@ -59,6 +59,7 @@
 @import 'components/sprite';
 
 @import 'components/vendor/swiper';
+@import 'components/vendor/simple-scrollbar';
 
 @import 'components/header';
 @import 'components/footer';
@@ -70,5 +71,8 @@
 @import 'components/articles';
 @import 'components/about';
 @import 'components/subscription';
+
+@import 'components/breadcrumbs';
+@import 'components/forms';
 
 @import 'components/responsive';
