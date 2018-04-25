@@ -252,3 +252,24 @@
     }
   }
 }
+
+.product-tooltip {
+  display: inline-block;
+  vertical-align: middle;
+  padding: rem-calc(10 20 0);
+  min-width: rem-calc(133);
+  max-width: rem-calc(256);
+  font-size: rem-calc(14);
+  border: 1px solid $secondary-color;
+  border-radius: 2px;
+  opacity: 1;
+  background-color: $white;
+  p {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+.product-tooltip-title {
+  margin-bottom: rem-calc(10);
+  color: #267e85;
+}
