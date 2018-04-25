@@ -1,0 +1,27 @@
+.pagination {
+  font-weight: 600;
+  white-space: nowrap;
+  li {
+    width: rem-calc(40);
+    line-height: unitless-calc(41, 14);
+    text-align: center;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.pagination-previous,
+    &.pagination-next {
+      width: auto;
+      a {
+        background-color: transparent;
+        &:before,
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  a {
+    display: block;
+    background-color: $medium-gray;
+  }
+}

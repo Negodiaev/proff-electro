@@ -228,14 +228,14 @@ $input-error-font-weight: $global-weight-bold;
 
 $accordion-background: whitesmoke;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(15);
+$accordion-title-font-size: rem-calc(14);
 $accordion-item-color: $body-font-color;
 $accordion-item-background-hover: whitesmoke;
-$accordion-item-padding: rem-calc(13 10 12 14);
+$accordion-item-padding: rem-calc(0 10);
 $accordion-content-background: $white;
 $accordion-content-border: 0;
 $accordion-content-color: $black;
-$accordion-content-padding: rem-calc(0 17 10 10);
+$accordion-content-padding: rem-calc(0 10 10);
 
 // 8. Accordion Menu
 // -----------------
@@ -267,12 +267,12 @@ $badge-font-size: 0.6rem;
 // 10. Breadcrumbs
 // ---------------
 
-$breadcrumbs-margin: 0 0 $global-margin 0;
+$breadcrumbs-margin: 0 0 rem-calc(10) 0;
 $breadcrumbs-item-font-size: rem-calc(13);
 $breadcrumbs-item-color: $dark-gray;
 $breadcrumbs-item-color-current: $dark-gray;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: rem-calc(2);
+$breadcrumbs-item-margin: rem-calc(1);
 $breadcrumbs-item-uppercase: false;
 $breadcrumbs-item-separator: true;
 $breadcrumbs-item-separator-item: '/';
@@ -428,8 +428,8 @@ $form-label-color: $black;
 $form-label-font-size: rem-calc(16);
 $form-label-font-weight: $global-weight-normal;
 $form-label-line-height: 1.5;
-$select-background: $white;
-$select-triangle-color: $dark-gray;
+$select-background: transparent;
+$select-triangle-color: transparent;
 $select-radius: $global-radius;
 $input-color: $black;
 $input-placeholder-color: $medium-gray;
@@ -459,7 +459,7 @@ $label-color: $dark-gray;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
 $label-font-size: rem-calc(14);
-$label-padding: rem-calc(8 20);
+$label-padding: rem-calc(7 19);
 $label-radius: $global-radius;
 
 // 22. Media Object
@@ -533,17 +533,17 @@ $orbit-control-zindex: 10;
 
 $pagination-font-size: rem-calc(14);
 $pagination-margin-bottom: $global-margin;
-$pagination-item-color: $black;
-$pagination-item-padding: rem-calc(3 10);
-$pagination-item-spacing: rem-calc(1);
+$pagination-item-color: #494949;
+$pagination-item-padding: rem-calc(0 5);
+$pagination-item-spacing: rem-calc(4);
 $pagination-radius: $global-radius;
-$pagination-item-background-hover: $light-gray;
-$pagination-item-background-current: $primary-color;
+$pagination-item-background-hover: #e3e3e3;
+$pagination-item-background-current: $secondary-color;
 $pagination-item-color-current: $white;
 $pagination-item-color-disabled: $medium-gray;
-$pagination-ellipsis-color: $black;
+$pagination-ellipsis-color: $dark-gray;
 $pagination-mobile-items: false;
-$pagination-mobile-current-item: false;
+$pagination-mobile-current-item: true;
 $pagination-arrows: true;
 
 // 28. Progress Bar
@@ -772,7 +772,7 @@ $switch-paddle-transition: all 0.25s ease-out;
 $table-background: $white;
 $table-color-scale: 5%;
 $table-border: 0;
-$table-padding: rem-calc(8 10 10);
+$table-padding: rem-calc(2 0);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
 $table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
@@ -786,7 +786,7 @@ $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
 $table-head-font-color: $body-font-color;
 $table-foot-font-color: $body-font-color;
 $show-header-for-stacked: false;
-$table-stack-breakpoint: medium;
+$table-stack-breakpoint: small;
 
 // 51. Tabs
 // --------

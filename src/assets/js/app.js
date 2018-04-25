@@ -84,4 +84,30 @@ document.addEventListener('DOMContentLoaded', function(event) {
     }
   });
   //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Counter
+  var increments = document.querySelectorAll('.counter-button.plus'),
+    decrements = document.querySelectorAll('.counter-button.minus'),
+    i;
+
+  for (i = 0; i < increments.length; i++) {
+    increments[i].addEventListener('click', function() {
+      var counterInput = this.parentElement.firstElementChild;
+
+      if (counterInput.classList.contains('counter-input') && counterInput.value < 1001) {
+        counterInput.value++;
+      }
+    });
+  }
+
+  for (i = 0; i < decrements.length; i++) {
+    decrements[i].addEventListener('click', function() {
+      var counterInput = this.parentElement.firstElementChild;
+
+      if (counterInput.classList.contains('counter-input') && counterInput.value > 1) {
+        counterInput.value--;
+      }
+    });
+  }
 });

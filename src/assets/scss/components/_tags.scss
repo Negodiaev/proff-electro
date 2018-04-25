@@ -1,17 +1,15 @@
-.breadcrumbs-wrapper {
-  padding: rem-calc(20 0 10);
-}
-.breadcrumbs {
+.tags {
+  margin-left: 0;
   font-weight: 600;
   li {
-    line-height: 1;
+    margin: rem-calc(0 10 10 0);
   }
   a {
     display: inline-block;
+    vertical-align: middle;
     border-bottom: 1px solid $dark-gray;
-    text-decoration: none;
+    color: $dark-gray;
     &:hover {
-      text-decoration: none;
       border-color: transparent;
     }
   }

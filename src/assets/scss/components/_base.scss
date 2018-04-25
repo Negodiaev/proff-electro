@@ -105,9 +105,6 @@ svg {
 
 .title-block-link {
   margin-left: rem-calc(20);
-  path {
-    fill: red;
-  }
 }
 
 .content-card {
@@ -118,7 +115,8 @@ svg {
   padding-top: rem-calc(7);
   padding-bottom: rem-calc(7);
   color: #746127;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #746127;
   }
 }

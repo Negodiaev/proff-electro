@@ -285,6 +285,66 @@
       justify-content: flex-end;
     }
   }
+
+  // Inner page
+  .sorting {
+    .select {
+      width: 100%;
+      max-width: rem-calc(208);
+    }
+    .select-small {
+      max-width: rem-calc(200);
+    }
+  }
+  .product-card {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product-card-column {
+    flex: 1 1 50%;
+    &.picture-column,
+    &.details-column {
+      max-width: 50%;
+    }
+    &.info-column,
+    &.details-column {
+      padding: rem-calc(20 10 18 20);
+    }
+    &.info-column {
+      order: 3;
+    }
+  }
+  .product-table {
+    tr {
+      padding: 0;
+      background-color: $white;
+      background-image: radial-gradient(circle at 2px 2px, #d8d8d8 2px, transparent 0, transparent 3px);
+      background-repeat: repeat-x;
+      background-size: 7px 3px;
+      background-position: 0 50%;
+      &:not(:last-child) {
+        border-bottom: 0;
+      }
+    }
+    td {
+      padding: rem-calc(6 0 7);
+      &:not(:last-child) {
+        .column-content {
+          display: inline-block;
+          vertical-align: middle;
+          padding-right: rem-calc(8);
+        }
+      }
+      &:last-child {
+        .column-content {
+          padding-left: rem-calc(8);
+        }
+      }
+    }
+    .column-content {
+      background-color: $white;
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -522,6 +582,137 @@
       padding-top: rem-calc(23);
       padding-bottom: rem-calc(23);
       width: rem-calc(100);
+    }
+  }
+
+  // Inner page
+  .breadcrumbs-wrapper {
+    padding-top: rem-calc(31);
+    padding-bottom: rem-calc(18);
+  }
+  .filter {
+    .accordion-title {
+      font-size: rem-calc(15);
+      line-height: unitless-calc(35, 15);
+      &:before {
+        top: 28%;
+      }
+    }
+    .accordion-title-text {
+      padding: rem-calc(13 10 12 12);
+    }
+    .accordion-content {
+      padding-right: rem-calc(17);
+    }
+    .checkboxes {
+      padding-left: rem-calc(14);
+    }
+  }
+  .filter-accordion {
+    margin-bottom: rem-calc(30);
+  }
+  .filter-buttons {
+    padding-right: rem-calc(19);
+    padding-left: rem-calc(9);
+  }
+  .filter-button-apply {
+    margin-bottom: rem-calc(30);
+  }
+  .search-content {
+    padding-bottom: rem-calc(40);
+    p {
+      margin-bottom: rem-calc(48);
+    }
+    .tags {
+      margin-bottom: rem-calc(54);
+      padding-top: rem-calc(8);
+    }
+    .sorting-long {
+      padding-right: rem-calc(22);
+    }
+    .pagination {
+      margin-bottom: rem-calc(50);
+    }
+  }
+  .tags {
+    li {
+      margin-right: rem-calc(16);
+    }
+  }
+  .search-items {
+    margin-bottom: rem-calc(40);
+    & > li {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(40);
+      }
+    }
+  }
+  .product-card {
+    flex-wrap: nowrap;
+    .product-card-title {
+      margin-bottom: rem-calc(12);
+    }
+    .tags {
+      margin-bottom: rem-calc(23);
+    }
+    .product-costs {
+      margin-bottom: rem-calc(34);
+    }
+    .products-number {
+      margin-bottom: rem-calc(62);
+    }
+    .product-out-button {
+      margin-bottom: rem-calc(20);
+    }
+    .product-out {
+      .product-action-button {
+        margin-bottom: rem-calc(30);
+      }
+    }
+  }
+  .product-card-column {
+    &.picture-column {
+      flex: 0 0 rem-calc(180);
+      padding: rem-calc(12 20 10 0);
+      max-width: rem-calc(180);
+    }
+    &.info-column,
+    &.details-column {
+      padding-top: rem-calc(30);
+      padding-right: rem-calc(20);
+    }
+    &.info-column {
+      order: 2;
+      padding-left: 0;
+    }
+    &.details-column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      flex: 0 0 rem-calc(200);
+      order: 3;
+      max-width: rem-calc(200);
+    }
+  }
+  .product-card-picture {
+    padding-top: rem-calc(34);
+  }
+  .product-table {
+    td {
+      &:last-child {
+        width: rem-calc(140);
+      }
+    }
+  }
+  .product-out {
+    .product-out-button {
+      width: 100%;
+    }
+  }
+  .catalog-page {
+    .filter {
+      margin-top: rem-calc(8);
+      padding-bottom: rem-calc(18);
     }
   }
 }

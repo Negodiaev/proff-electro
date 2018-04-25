@@ -1,3 +1,18 @@
+.ss-container {
+  position: relative;
+  padding-bottom: 0;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 100%;
+    // height: calc(100% + 60px);
+    background-color: #e3e3e3;
+  }
+}
+
 .ss-wrapper {
   overflow: hidden;
   width: 100%;

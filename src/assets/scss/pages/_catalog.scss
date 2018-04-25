@@ -1,0 +1,254 @@
+.search-content {
+  padding-bottom: rem-calc(20);
+  ul {
+    margin-left: 0;
+  }
+  p {
+    margin-bottom: rem-calc(20);
+  }
+  .page-title {
+    margin-bottom: rem-calc(8);
+  }
+  .tags {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.sorting {
+  .select {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.search-items {
+  margin-bottom: rem-calc(10);
+  & > li {
+    &:not(:last-child) {
+      margin-bottom: rem-calc(10);
+    }
+  }
+}
+
+.product-card {
+  border: 1px solid #d6d6d6;
+  .product-card-title {
+    margin-bottom: rem-calc(20);
+  }
+  .product-table {
+    margin-bottom: rem-calc(5);
+  }
+  .product-costs {
+    margin-bottom: rem-calc(10);
+  }
+  .product-amount-title {
+    margin-bottom: rem-calc(10);
+  }
+  .counter-wrapper {
+    margin-bottom: rem-calc(14);
+  }
+  .products-number {
+    margin-bottom: rem-calc(10);
+  }
+  .product-action-button {
+    margin-bottom: rem-calc(20);
+  }
+  .product-out-button {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.product-card-column {
+  padding: rem-calc(10);
+}
+
+.details-column {
+  background-color: #fafafa;
+}
+
+.product-card-picture {
+  position: relative;
+  padding: rem-calc(40 0 10);
+  .product-features {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.product-features {
+  display: flex;
+  align-items: center;
+  font-size: rem-calc(17);
+  line-height: unitless-calc(24, 17);
+  font-weight: $global-weight-bold;
+  color: $secondary-color;
+  li {
+    padding: rem-calc(0 8);
+    &:not(:last-child) {
+      border-right: 1px solid #ededed;
+    }
+  }
+}
+
+.product-card-title {
+  max-width: rem-calc(500);
+  line-height: unitless-calc(32, 20);
+  font-weight: $global-weight-normal;
+  color: #267e85;
+  a {
+    border-bottom: 1px solid #267e85;
+    line-height: 1;
+    color: #267e85;
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+.product-table {
+  line-height: unitless-calc(21, 16);
+  tr {
+    padding: rem-calc(5 0);
+    &:not(:last-child) {
+      border-bottom: 1px solid $medium-gray;
+    }
+  }
+}
+
+.product-price {
+  white-space: nowrap;
+  font-size: rem-calc(19);
+  &.current {
+    font-size: rem-calc(24);
+    font-weight: $global-weight-bold;
+  }
+  &.previous {
+    text-decoration: line-through;
+  }
+}
+
+.product-amount {
+  font-size: rem-calc(15);
+  .counter {
+    margin-right: rem-calc(10);
+  }
+  .button-cart {
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.product-amount-title {
+  color: #9e9e9e;
+}
+
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.counter {
+  position: relative;
+  width: rem-calc(80);
+  text-align: center;
+  background-color: $white;
+  input {
+    margin: 0;
+    padding: rem-calc(0 30 0 10);
+    height: rem-calc(40);
+    border: 0;
+    outline: 0;
+    font-size: rem-calc(15);
+    text-align: center;
+    box-shadow: none;
+    &::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      appearance: none;
+    }
+    &:focus {
+      border: 0;
+    }
+  }
+}
+
+.counter-button {
+  position: absolute;
+  right: 0;
+  padding: 0;
+  width: rem-calc(20);
+  height: rem-calc(20);
+  font-size: rem-calc(24);
+  line-height: unitless-calc(18, 24);
+  font-weight: $global-weight-bold;
+  user-select: none;
+  color: #c2c2c2;
+  background-color: $medium-gray;
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    color: #c2c2c2;
+    background-color: #e3e3e3;
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid #d7d7d7;
+  }
+  &.plus {
+    top: 0;
+  }
+  &.minus {
+    bottom: 0;
+  }
+}
+
+.products-number {
+  line-height: unitless-calc(17, 15);
+  white-space: nowrap;
+  .icon {
+    margin: rem-calc(0 5 2 0);
+  }
+}
+
+.product-action-button,
+.product-out-button {
+  font-size: rem-calc(15);
+  line-height: unitless-calc(19, 15);
+}
+
+.product-action-button {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: #656565;
+  background-color: transparent;
+  &:hover,
+  &:focus {
+    color: #656565;
+    background-color: transparent;
+    .button-text-inner {
+      border-color: transparent;
+    }
+  }
+  .icon {
+    margin-right: rem-calc(9);
+  }
+  .button-text-inner {
+    line-height: 1;
+    border-bottom: 1px solid #656565;
+    transition: border-color 0.15s ease;
+  }
+}
+
+.product-out {
+  .product-out-button {
+    padding: rem-calc(16 20 17);
+    width: rem-calc(172);
+    opacity: 1;
+    color: #010101;
+    background-color: $medium-gray;
+    &:hover,
+    &:focus {
+      color: #010101;
+      background-color: $medium-gray;
+    }
+  }
+}
