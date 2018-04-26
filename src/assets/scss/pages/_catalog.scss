@@ -38,21 +38,6 @@
   .product-table {
     margin-bottom: rem-calc(5);
   }
-  .product-costs {
-    margin-bottom: rem-calc(10);
-  }
-  .product-amount-title {
-    margin-bottom: rem-calc(10);
-  }
-  .counter-wrapper {
-    margin-bottom: rem-calc(14);
-  }
-  .products-number {
-    margin-bottom: rem-calc(10);
-  }
-  .product-action-button {
-    margin-bottom: rem-calc(20);
-  }
   .product-out-button {
     margin-bottom: rem-calc(10);
   }
@@ -79,6 +64,7 @@
 .product-features {
   display: flex;
   align-items: center;
+  margin: 0;
   font-size: rem-calc(17);
   line-height: unitless-calc(24, 17);
   font-weight: $global-weight-bold;
@@ -88,6 +74,9 @@
     &:not(:last-child) {
       border-right: 1px solid #ededed;
     }
+  }
+  .has-tip {
+    outline: 0;
   }
 }
 
@@ -116,10 +105,15 @@
   }
 }
 
+.product-costs {
+  margin-bottom: rem-calc(10);
+}
+
 .product-price {
   white-space: nowrap;
   font-size: rem-calc(19);
   &.current {
+    padding-right: rem-calc(15);
     font-size: rem-calc(24);
     font-weight: $global-weight-bold;
   }
@@ -134,15 +128,25 @@
     margin-right: rem-calc(10);
   }
   .button-cart {
+    padding-left: rem-calc(12);
+    padding-right: rem-calc(12);
+    font-size: rem-calc(15);
+    font-weight: 600;
+    color: #746127;
     box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+    .text-info {
+      margin-left: rem-calc(8);
+    }
   }
 }
 
 .product-amount-title {
+  margin-bottom: rem-calc(10);
   color: #9e9e9e;
 }
 
 .counter-wrapper {
+  margin-bottom: rem-calc(14);
   display: flex;
   align-items: center;
 }
@@ -168,6 +172,9 @@
     &:focus {
       border: 0;
     }
+    &.bordered {
+      border: 1px solid #d7d7d7;
+    }
   }
 }
 
@@ -187,7 +194,12 @@
   &:focus {
     border-color: transparent;
     color: #c2c2c2;
+  }
+  &:hover {
     background-color: #e3e3e3;
+  }
+  &:focus {
+    background-color: $medium-gray;
   }
   &:not(:last-child) {
     border-bottom: 1px solid #d7d7d7;
@@ -201,6 +213,8 @@
 }
 
 .products-number {
+  margin-bottom: rem-calc(10);
+  font-size: rem-calc(15);
   line-height: unitless-calc(17, 15);
   white-space: nowrap;
   .icon {
@@ -217,6 +231,7 @@
 .product-action-button {
   display: flex;
   align-items: center;
+  margin-bottom: rem-calc(20);
   padding: 0;
   color: #656565;
   background-color: transparent;
@@ -254,6 +269,7 @@
 }
 
 .product-tooltip {
+  z-index: 20;
   display: inline-block;
   vertical-align: middle;
   padding: rem-calc(10 20 0);

@@ -1,0 +1,365 @@
+<div class="product-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="breadcrumbs-wrapper">
+          <div class="column row">
+            <nav aria-label="You are here:" role="navigation">
+              <ul class="breadcrumbs">
+                <li>
+                  <a href="#">Главная страница</a>
+                </li>
+                <li>
+                  <a href="#">Категория</a>
+                </li>
+                <li>
+                  <span class="show-for-sr">Current: </span> Активная категория</li>
+              </ul>
+            </nav>
+            <!-- /.breadcrumbs -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.breadcrumbs-wrapper -->
+        <div class="content">
+          <div class="row">
+            <div class="columns medium-4 large-4" data-sticky-container>
+              <div class="gallery-sticky-container sticky" data-sticky data-margin-top=".625" data-top-anchor="product-content:top" data-btm-anchor="similar-slider:bottom">
+                <div class="product-gallery">
+                  <div id="product-gallery" class="product-gallery-main swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/5.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/4.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/3.jpg" alt="">
+                      </div>
+                      <!-- <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div> -->
+                    </div>
+                    <!-- Add Arrows -->
+                  </div>
+                  <div id="product-gallery-thumbs" class="swiper-container product-gallery-thumbs gallery-thumbs">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/1.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/2.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/5.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/4.jpg" alt="">
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="assets/img/goods/3.jpg" alt="">
+                      </div>
+                      <!-- <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div> -->
+                    </div>
+                    <div id="product-gallery-next" class="product-gallery-control product-gallery-next">
+                      <svg class="icon" width="9" height="16">
+                        <use xlink:href="#angle-next-gray"></use>
+                      </svg>
+                    </div>
+                    <div id="product-gallery-prev" class="product-gallery-control product-gallery-prev">
+                      <svg class="icon" width="9" height="16">
+                        <use xlink:href="#angle-prev-gray"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.product-gallery -->
+              </div>
+              <!-- /.gallery-sticky-container -->
+            </div>
+            <!-- /.columns -->
+            <div class="columns medium-8 large-8">
+              <div id="product-content" class="product-content">
+                <ul class="product-features">
+                  <li>
+                    <span data-tooltip class="top" tabindex="1" data-template="<div class='product-tooltip text-center'><h6 class='product-tooltip-title title'>Акция</h6></div>"
+                      data-position="top" data-fade-in-duration="0" data-fade-out-duration="0">-50%</span>
+                  </li>
+                  <li>
+                    <span data-tooltip class="top" tabindex="1" data-template="<div class='product-tooltip text-center'><h6 class='product-tooltip-title title'>Акция</h6></div>"
+                      data-position="top" data-fade-in-duration="0" data-fade-out-duration="0">
+                      <svg class="icon" width="23" height="22">
+                        <use xlink:href="#star"></use>
+                      </svg>
+                    </span>
+                  </li>
+                </ul>
+                <h1 class="page-title title">Заголовок с названием товара</h1>
+                <div class="product-costs flex-container align-bottom">
+                  <div class="product-price current">33 500 руб.</div>
+                  <div class="product-price previous">50 500 руб.</div>
+                </div>
+                <div class="products-number">
+                  <svg class="icon" width="26" height="17">
+                    <use xlink:href="#products-last-item"></use>
+                  </svg> Последний товар</div>
+                <div class="special-offer media-object">
+                  <div class="media-object-section flex-container align-middle">
+                    <svg class="icon" width="43" height="43">
+                      <use xlink:href="#present"></use>
+                    </svg>
+                  </div>
+                  <div class="media-object-section">
+                    <h6 class="special-offer-title title">Подарок за покупку двух наименований, третий в подарок</h6>
+                    <p>Действие акции до 21.01.2018</p>
+                  </div>
+                </div>
+                <div class="product-amount">
+                  <div class="product-amount-title">Количество</div>
+                  <div class="counter-wrapper">
+                    <div class="counter">
+                      <input type="number" class="counter-input bordered" value="1" min="1" max="1001">
+                      <button class="counter-button button plus">&plus;</button>
+                      <button class="counter-button button minus">&minus;</button>
+                    </div>
+                    <button class="button-cart button-primary button">
+                      <svg class="icon" width="25" height="25">
+                        <use xlink:href="#cart"></use>
+                      </svg>
+                      <span class="text-info show-for-medium">Добавить в корзину</span>
+                    </button>
+                  </div>
+                </div>
+                <button class="product-action-button button">
+                  <svg class="icon" width="30" height="28">
+                    <use xlink:href="#like"></use>
+                  </svg>
+                  <span class="text-info text-left">
+                    <span class="button-text-inner">
+                      Добавить в избранное</span>
+                  </span>
+                </button>
+                <table class="product-table stack">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="column-content">Свойство</div>
+                      </td>
+                      <td>
+                        <div class="column-content">Наименование</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="column-content">Вольтаж</div>
+                      </td>
+                      <td>
+                        <div class="column-content">1,88</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="column-content">Температура</div>
+                      </td>
+                      <td>
+                        <div class="column-content">До 500</div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="column-content">Теплопроводность</div>
+                      </td>
+                      <td>
+                        <div class="column-content">От 2</div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="product-tabs tabs" data-active-collapse="true" data-tabs id="collapsing-tabs">
+                  <li class="tabs-title is-active">
+                    <a href="#panel1c" aria-selected="true">Описание</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel2c">Свойства</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel3c">Доставка</a>
+                  </li>
+                  <li class="tabs-title">
+                    <a href="#panel4c">Оплата</a>
+                  </li>
+                </ul>
+                <div class="product-tabs-content tabs-content" data-tabs-content="collapsing-tabs">
+                  <div class="tabs-panel is-active" id="panel1c">
+                    <p>Существуют две основные трактовки понятия «текст»: «имманентная» (расширенная, философски нагруженная)
+                      и «репрезентативная» (более частная). Имманентный подход подразумевает отношение к тексту как к автономной
+                      реальности, нацеленность на выявление его внутренней структуры. Репрезентативный — рассмотрение текста
+                      как особой формы представления знаний о внешней тексту действительности.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel2c"> Имманентный подход подразумевает отношение к тексту как к автономной реальности, нацеленность на выявление
+                    его внутренней структуры. Репрезентативный — рассмотрение текста как особой формы представления знаний
+                    о внешней тексту действительности.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel3c">
+                    <img class="thumbnail" src="assets/img/articles/1.jpg">
+                  </div>
+                  <div class="tabs-panel" id="panel4c">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua.</p>
+                  </div>
+                </div>
+                <div class="title-block flex-container align-justify align-middle">
+                  <h2 class="section-title">С этим товаром покупают</h2>
+                  <a href="#" class="title-block-link">
+                    <svg class="icon" width="54px" height="54px">
+                      <use xlink:href="#arrow-right"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="goods-slider-wrapper content-slider-wrapper">
+                  <div id="similar-slider" class="goods-slider content-slider swiper-container">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="goods-item card">
+                          <div class="goods-item-picture card-section align-middle text-center">
+                            <img src="assets/img/goods/2.jpg">
+                          </div>
+                          <div class="goods-item-info card-section">
+                            <h5 class="goods-item-title">
+                              <a href="#">ABB DSH941R</a>
+                            </h5>
+                            <a href="#" class="goods-item-type">Дифавтомат</a>
+                            <div class="goods-item-price">2 700 руб.
+                              <button class="button-cart button-primary button small">
+                                <svg class="icon" width="25" height="25">
+                                  <use xlink:href="#cart"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="goods-item card">
+                          <div class="goods-item-picture card-section align-middle text-center">
+                            <img src="assets/img/goods/3.jpg">
+                          </div>
+                          <div class="goods-item-info card-section">
+                            <h5 class="goods-item-title">
+                              <a href="#">ABB MISTRAL65</a>
+                            </h5>
+                            <a href="#" class="goods-item-type">Бокс настенный</a>
+                            <div class="goods-item-price">3 200 руб.
+                              <button class="button-cart button-primary button small">
+                                <svg class="icon" width="25" height="25">
+                                  <use xlink:href="#cart"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="goods-item card">
+                          <div class="goods-item-picture card-section align-middle text-center">
+                            <img src="assets/img/goods/4.jpg">
+                          </div>
+                          <div class="goods-item-info card-section">
+                            <h5 class="goods-item-title">
+                              <a href="#">ABB DSH941R</a>
+                            </h5>
+                            <a href="#" class="goods-item-type">Дифавтомат</a>
+                            <div class="goods-item-price">50 руб.
+                              <button class="button-cart button-primary button small">
+                                <svg class="icon" width="25" height="25">
+                                  <use xlink:href="#cart"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="goods-item card">
+                          <div class="goods-item-picture card-section align-middle text-center">
+                            <img src="assets/img/goods/1.jpg">
+                          </div>
+                          <div class="goods-item-info card-section">
+                            <h5 class="goods-item-title">
+                              <a href="#">ABB DSH941R</a>
+                            </h5>
+                            <a href="#" class="goods-item-type">Дифавтомат</a>
+                            <div class="goods-item-price">2 700 руб.
+                              <button class="button-cart button-primary button small">
+                                <svg class="icon" width="25" height="25">
+                                  <use xlink:href="#cart"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="goods-item card">
+                          <div class="goods-item-picture card-section align-middle text-center">
+                            <img src="assets/img/goods/4.jpg">
+                          </div>
+                          <div class="goods-item-info card-section">
+                            <h5 class="goods-item-title">
+                              <a href="#">ABB DSH941R</a>
+                            </h5>
+                            <a href="#" class="goods-item-type">Дифавтомат</a>
+                            <div class="goods-item-price">50 руб.
+                              <button class="button-cart button-primary button small">
+                                <svg class="icon" width="25" height="25">
+                                  <use xlink:href="#cart"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /.goods-slider -->
+                  <!-- <div id="similar-slider-next" class="swiper-button-next">
+                    <svg class="icon" width="19" height="33">
+                      <use xlink:href="#angle-next"></use>
+                    </svg>
+                  </div>
+                  <div id="similar-slider-prev" class="swiper-button-prev">
+                    <svg class="icon" width="19" height="33">
+                      <use xlink:href="#angle-prev"></use>
+                    </svg>
+                  </div>
+                  <div id="similar-slider-pagination" class="swiper-pagination"></div> -->
+                </div>
+                <!-- /.goods-slider-wrapper -->
+              </div>
+              <!-- /.product-content -->
+            </div>
+            <!-- /.columns -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->

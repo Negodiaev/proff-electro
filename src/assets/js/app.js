@@ -41,16 +41,16 @@ document.addEventListener('DOMContentLoaded', function(event) {
       clickable: true
     },
     breakpoints: {
-      544: {
-        // when window width is <= 480px
+      543: {
+        // when window width is <= 543px
         slidesPerView: 1,
         slidesPerGroup: 1
       },
-      768: {
+      763: {
         slidesPerView: 2,
         slidesPerGroup: 2
       },
-      1024: {
+      1023: {
         slidesPerView: 3,
         slidesPerGroup: 3
       }
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
     },
     breakpoints: {
       1023: {
-        // when window width is <= 640px
+        // when window width is <= 1023px
         slidesPerView: 1,
         slidesPerGroup: 1
       }
@@ -110,4 +110,62 @@ document.addEventListener('DOMContentLoaded', function(event) {
       }
     });
   }
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Similar slider
+  var similarSwiper = new Swiper('#similar-slider', {
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    loop: true,
+    autoHeight: true,
+    // navigation: {
+    //   nextEl: '#similar-slider-next',
+    //   prevEl: '#similar-slider-prev'
+    // },
+    // pagination: {
+    //   el: '#similar-slider-pagination',
+    //   clickable: true
+    // },
+    breakpoints: {
+      543: {
+        // when window width is <= 543px
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      639: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+      799: {
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      1199: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      }
+    }
+  });
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Product gallery
+  var productGallery = new Swiper('#product-gallery', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '#product-gallery-next',
+      prevEl: '#product-gallery-prev'
+    }
+  });
+  var galleryThumbs = new Swiper('#product-gallery-thumbs', {
+    spaceBetween: 19,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true
+  });
+  productGallery.controller.control = galleryThumbs;
+  galleryThumbs.controller.control = productGallery;
+  //------------------------------------------------------------------------//
 });
