@@ -768,6 +768,21 @@
     .breadcrumbs-wrapper {
       margin-bottom: rem-calc(19);
     }
+    .product-out {
+      margin-bottom: rem-calc(36);
+    }
+    .product-out-description {
+      margin-bottom: rem-calc(32);
+      padding-top: rem-calc(18);
+    }
+  }
+  .product-page-out {
+    .product-content {
+      padding-bottom: rem-calc(15);
+      .goods-slider-wrapper {
+        margin-bottom: rem-calc(30);
+      }
+    }
   }
   .product-gallery-main {
     margin-bottom: 22px;

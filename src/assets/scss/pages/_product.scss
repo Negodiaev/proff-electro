@@ -1,5 +1,19 @@
+.product-page {
+  .product-out {
+    font-size: rem-calc(15);
+    color: #010101;
+    .product-action-button {
+      margin-bottom: rem-calc(10);
+    }
+  }
+}
+
+.product-gallery-wrapper {
+  margin-bottom: rem-calc(30);
+}
+
 .product-gallery {
-  margin: 0 auto rem-calc(30);
+  margin: 0 auto;
   text-align: center;
   background-color: $white;
   .swiper-container {
@@ -170,4 +184,9 @@
   p {
     margin-bottom: rem-calc(10);
   }
+}
+
+.product-out-description {
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(10 0);
 }

@@ -1,0 +1,17 @@
+.checkout-content {
+  padding: rem-calc(10 0);
+  background-color: $light-gray;
+}
+
+.checkout-card {
+  &:not(:last-child) {
+    margin-bottom: rem-calc(10);
+  }
+  ul {
+    margin-left: 0;
+  }
+}
+
+.cart-item {
+  position: relative;
+}

@@ -289,3 +289,15 @@
   margin-bottom: rem-calc(10);
   color: #267e85;
 }
+
+.product-tooltip-note {
+  border-top: 1px solid #d6d6d6;
+  &.success {
+    &:before {
+      content: '\2714';
+      margin-right: rem-calc(4);
+      font-size: rem-calc(20);
+      color: $secondary-color;
+    }
+  }
+}
