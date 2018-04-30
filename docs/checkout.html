@@ -3108,11 +3108,14 @@
                       <div class="amount-column cart-item-column">
                         <div class="cart-item-amount">
                           <div class="counter">
-                            <input type="number" class="counter-input" value="1" min="1" max="1001">
+                            <input type="number" class="counter-input bordered" value="1" min="1" max="1001">
                             <button class="counter-button button plus">&plus;</button>
                             <button class="counter-button button minus">&minus;</button>
                           </div>
-                          <span class="checcartkout-item-sum">4 500 руб.</span>
+                          <span class="cart-item-sum">4 500 руб.</span>
+                          <button class="close-button" aria-label="Удалить товар" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
                         <div class="products-number">
                           <svg class="icon" width="26" height="17">
@@ -3120,9 +3123,6 @@
                           </svg> Последний товар</div>
                       </div>
                       <!-- /.cart-item-column -->
-                      <button class="close-button" aria-label="Удалить товар" type="button">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
                     </div>
                     <!-- /.cart-item -->
                   </li>
@@ -3159,17 +3159,17 @@
                       <div class="amount-column cart-item-column">
                         <div class="cart-item-amount">
                           <div class="counter">
-                            <input type="number" class="counter-input" value="2" min="1" max="1001">
+                            <input type="number" class="counter-input bordered" value="2" min="1" max="1001">
                             <button class="counter-button button plus">&plus;</button>
                             <button class="counter-button button minus">&minus;</button>
                           </div>
-                          <span class="checcartkout-item-sum">2 000 руб.</span>
+                          <span class="cart-item-sum">2 000 руб.</span>
+                          <button class="close-button" aria-label="Удалить товар" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
                       </div>
                       <!-- /.cart-item-column -->
-                      <button class="close-button" aria-label="Удалить товар" type="button">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
                     </div>
                     <!-- /.cart-item -->
                   </li>
@@ -3196,52 +3196,52 @@
                       <div class="amount-column cart-item-column">
                         <div class="cart-item-amount">
                           <div class="counter">
-                            <input type="number" class="counter-input" value="3" min="1" max="1001">
+                            <input type="number" class="counter-input bordered" value="3" min="1" max="1001">
                             <button class="counter-button button plus">&plus;</button>
                             <button class="counter-button button minus">&minus;</button>
                           </div>
-                          <span class="checcartkout-item-sum">4 500 руб.</span>
+                          <span class="cart-item-sum">4 500 руб.</span>
+                          <button class="close-button" aria-label="Удалить товар" type="button">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
                         </div>
                       </div>
                       <!-- /.cart-item-column -->
-                      <button class="close-button" aria-label="Удалить товар" type="button">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
                     </div>
                     <!-- /.cart-item -->
                   </li>
                 </ul>
                 <!-- /.cart-items -->
                 <div class="cart-costs">
-                  <div class="cart-costs-notice">Итого</div>
+                  <div class="cart-costs-title">Итого</div>
                   <div class="cart-price current">11 000 руб.</div>
                   <div class="cart-price previous">
                     <span class="text-through">22 500</span> руб.</div>
-                </div>
-                <!-- /.cart-costs -->
-                <div class="cart-coupon">
-                  <div class="cart-coupon-container">
-                    <div class="cart-coupon-column">
-                      <label for="cart-coupon-field" class="large-text-right middle">Введите промокод:</label>
-                      <input type="text" id="cart-coupon-field">
-                    </div>
-                    <div class="cart-coupon-column">
-                      <button type="button" class="cart-coupon-button button button-primary large">Применить</button>
+                  <div class="cart-coupon">
+                    <div class="cart-coupon-container">
+                      <div class="cart-coupon-column">
+                        <label for="cart-coupon-field" class="cart-coupon-label large-text-right middle">Введите промокод:</label>
+                        <input type="text" id="cart-coupon-field" class="cart-coupon-field">
+                      </div>
+                      <div class="cart-coupon-column">
+                        <button type="button" class="cart-coupon-button button button-primary large">Применить</button>
+                      </div>
                     </div>
                   </div>
+                  <!-- /.cart-coupon -->
                 </div>
-                <!-- /.cart-coupon -->
+                <!-- /.cart-costs -->
               </div>
               <!-- /.cart -->
               <div class="person checkout-card content-card">
                 <div class="checkout-card-title title h1">Ваши данные</div>
                 <div class="person-info">
                   <div class="person-item">
-                    <label for="person-mail" class="large-text-right middle">Email:</label>
+                    <label for="person-mail" class="medium-text-right middle">Email:</label>
                     <input type="text" id="person-mail">
                   </div>
                   <div class="person-item">
-                    <label for="person-profile" class="large-text-right middle">Профиль:</label>
+                    <label for="person-profile" class="medium-text-right middle">Профиль:</label>
                     <div class="select">
                       <select id="person-profile">
                         <option value="0"></option>
@@ -3252,38 +3252,40 @@
                     </div>
                   </div>
                   <div class="person-item">
-                    <label for="person-name" class="large-text-right middle">ФИО:</label>
+                    <label for="person-name" class="medium-text-right middle">ФИО:</label>
                     <input type="text" id="person-name">
                   </div>
                   <div class="person-item">
-                    <label for="person-tel" class="large-text-right middle">Телефон:</label>
+                    <label for="person-tel" class="medium-text-right middle">Телефон:</label>
                     <input type="text" id="person-tel">
                   </div>
                   <div class="person-item">
-                    <label for="person-city" class="large-text-right middle">Город:</label>
+                    <label for="person-city" class="medium-text-right middle">Город:</label>
                     <input type="text" id="person-city">
                   </div>
-                  <div class="person-item">
-                    <div class="person-label">Статус:</div>
-                    <div class="person-status-item">
-                      <input type="radio" name="person-status" value="1" id="person-status-1" class="radio">
-                      <label for="person-status-1">Физ. лицо</label>
-                    </div>
-                    <div class="person-status-item">
-                      <input type="radio" name="person-status" value="2" id="person-status-2" class="radio" checked>
-                      <label for="person-status-2">Юр. лицо</label>
+                  <div class="person-item checkboxes-item">
+                    <div class="person-label medium-text-right">Статус:</div>
+                    <div class="person-checkboxes">
+                      <div class="person-checkbox-wrapper">
+                        <input type="radio" name="person-status" value="1" id="person-status-1" class="radio">
+                        <label for="person-status-1">Физ. лицо</label>
+                      </div>
+                      <div class="person-checkbox-wrapper">
+                        <input type="radio" name="person-status" value="2" id="person-status-2" class="radio" checked>
+                        <label for="person-status-2">Юр. лицо</label>
+                      </div>
                     </div>
                   </div>
                   <div class="person-item">
-                    <label for="person-company" class="large-text-right middle">Название компании:</label>
+                    <label for="person-company" class="medium-text-right middle">Название компании:</label>
                     <input type="text" id="person-company">
                   </div>
                   <div class="person-item">
-                    <label for="person-tax-number" class="large-text-right middle">ИНН:</label>
+                    <label for="person-tax-number" class="medium-text-right middle">ИНН:</label>
                     <input type="text" id="person-tax-number">
                   </div>
                   <div class="person-item">
-                    <label for="person-comment" class="large-text-right middle">Комментарий:</label>
+                    <label for="person-comment" class="medium-text-right middle">Комментарий:</label>
                     <textarea id="person-comment" placeholder=""></textarea>
                   </div>
                 </div>
@@ -3301,13 +3303,15 @@
                       текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет
                       текст следующим образом: «это письменное сообщение, объективированное в виде письменного документа,</p>
                     <div class="delivery-details">
-                      <label for="delivery-address" class="large-text-right middle">Профиль:</label>
-                      <div class="select">
-                        <select id="delivery-address">
-                          <option value="1">Ул. Мира 77А</option>
-                          <option value="2">Ул. Мира 65А</option>
-                          <option value="3">Ул. Мира 41А</option>
-                        </select>
+                      <div class="person-item">
+                        <label for="delivery-address" class="medium-text-right middle">Выберите магазин:</label>
+                        <div class="select">
+                          <select id="delivery-address">
+                            <option value="1">Ул. Мира 77А</option>
+                            <option value="2">Ул. Мира 65А</option>
+                            <option value="3">Ул. Мира 41А</option>
+                          </select>
+                        </div>
                       </div>
                       <div class="checkout-costs">
                         <div class="checkout-costs-title">Стоимость доставки</div>
@@ -3327,83 +3331,74 @@
               <!-- /.delivery -->
               <div class="payment checkout-card content-card">
                 <div class="checkout-card-title title h1">Оплата</div>
-                <ul class="payment-types row">
-                  <li class="large-2 columns">
-                    <div class="payment-type">
-                      <input type="radio" name="payment-type" value="1" id="payment-type-1" class="radio">
-                      <label for="payment-type-1">
-                        <span class="payment-type-picture">
-                          <svg class="icon" width="60" height="59">
-                            <use xlink:href="#receipt"></use>
-                          </svg>
-                        </span>
-                        <span class="payment-type-title">По счету</span>
-                      </label>
-                    </div>
+                <ul class="payment-types">
+                  <li class="payment-type">
+                    <input type="radio" name="payment-type" value="1" id="payment-type-1" class="radio">
+                    <label for="payment-type-1">
+                      <span class="payment-type-picture">
+                        <svg class="icon" width="60" height="59">
+                          <use xlink:href="#receipt"></use>
+                        </svg>
+                      </span>
+                      <span class="payment-type-title">По счету</span>
+                    </label>
                   </li>
-                  <li class="large-2 columns">
-                    <div class="payment-type">
-                      <input type="radio" name="payment-type" value="2" id="payment-type-2" class="radio">
-                      <label for="payment-type-2">
-                        <span class="payment-type-picture">
-                          <svg class="icon" width="67" height="66">
-                            <use xlink:href="#card-online"></use>
-                          </svg>
-                        </span>
-                        <span class="payment-type-title">Онлайн оплата</span>
-                      </label>
-                    </div>
+                  <li class="payment-type">
+                    <input type="radio" name="payment-type" value="2" id="payment-type-2" class="radio">
+                    <label for="payment-type-2">
+                      <span class="payment-type-picture">
+                        <svg class="icon" width="67" height="66">
+                          <use xlink:href="#card-online"></use>
+                        </svg>
+                      </span>
+                      <span class="payment-type-title">Онлайн оплата</span>
+                    </label>
                   </li>
-                  <li class="large-2 columns">
-                    <div class="payment-type">
-                      <input type="radio" name="payment-type" value="3" id="payment-type-3" class="radio" checked>
-                      <label for="payment-type-3">
-                        <span class="payment-type-picture">
-                          <svg class="icon" width="60" height="60">
-                            <use xlink:href="#wallet"></use>
-                          </svg>
-                        </span>
-                        <span class="payment-type-title">Наличными при получении</span>
-                      </label>
-                    </div>
+                  <li class="payment-type">
+                    <input type="radio" name="payment-type" value="3" id="payment-type-3" class="radio" checked>
+                    <label for="payment-type-3">
+                      <span class="payment-type-picture">
+                        <svg class="icon" width="60" height="60">
+                          <use xlink:href="#wallet"></use>
+                        </svg>
+                      </span>
+                      <span class="payment-type-title">Наличными
+                        <br>при получении</span>
+                    </label>
                   </li>
-                  <li class="large-2 columns end">
-                    <div class="payment-type">
-                      <input type="radio" name="payment-type" value="4" id="payment-type-4" class="radio">
-                      <label for="payment-type-4">
-                        <span class="payment-type-picture">
-                          <svg class="icon" width="54" height="60">
-                            <use xlink:href="#calc"></use>
-                          </svg>
-                        </span>
-                        <span class="payment-type-title">Картой при получении</span>
-                      </label>
-                    </div>
+                  <li class="payment-type">
+                    <input type="radio" name="payment-type" value="4" id="payment-type-4" class="radio">
+                    <label for="payment-type-4">
+                      <span class="payment-type-picture">
+                        <svg class="icon" width="54" height="60">
+                          <use xlink:href="#calc"></use>
+                        </svg>
+                      </span>
+                      <span class="payment-type-title">Картой
+                        <br>при получении</span>
+                    </label>
                   </li>
                 </ul>
+                <!-- /.payment-types -->
               </div>
               <!-- /.payment -->
               <div class="checkout-result checkout-card content-card">
                 <div class="checkout-card-title title h1">Итого к оплате</div>
                 <div class="checkout-costs">
                   <div class="checkout-costs-title">Общая сумма</div>
-                  <div class="checkout-price final">5 500 руб.</div>
+                  <div class="checkout-price final">16 500 руб.</div>
                 </div>
-                <div class="row">
-                  <div class="large-2 columns">
-                    <div class="checkout-costs">
-                      <div class="checkout-costs-title">Стоимость доставки</div>
-                      <div class="checkout-price">5 500 руб.</div>
-                    </div>
+                <div class="checkout-costs-container">
+                  <div class="checkout-costs">
+                    <div class="checkout-costs-title">Стоимость доставки</div>
+                    <div class="checkout-price">5 500 руб.</div>
                   </div>
-                  <div class="large-3 columns end">
-                    <div class="checkout-costs">
-                      <div class="checkout-costs-title">Ориентировочная дата сборки заказа</div>
-                      <div class="checkout-price">26.03.2018</div>
-                    </div>
+                  <div class="checkout-costs">
+                    <div class="checkout-costs-title">Ориентировочная дата сборки заказа</div>
+                    <div class="checkout-price">26.03.2018</div>
                   </div>
                 </div>
-                <!-- /.row -->
+                <!-- /.checkout-costs-container -->
                 <button class="checkout-button button button-primary large">Оформить заказ</button>
               </div>
               <!-- /.checkout-result -->

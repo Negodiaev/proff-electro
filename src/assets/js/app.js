@@ -92,7 +92,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
     i;
 
   for (i = 0; i < increments.length; i++) {
-    increments[i].addEventListener('click', function() {
+    increments[i].addEventListener('click', function(e) {
+      e.preventDefault();
+
       var counterInput = this.parentElement.firstElementChild;
 
       if (counterInput.classList.contains('counter-input') && counterInput.value < 1001) {
@@ -102,7 +104,9 @@ document.addEventListener('DOMContentLoaded', function(event) {
   }
 
   for (i = 0; i < decrements.length; i++) {
-    decrements[i].addEventListener('click', function() {
+    decrements[i].addEventListener('click', function(e) {
+      e.preventDefault();
+
       var counterInput = this.parentElement.firstElementChild;
 
       if (counterInput.classList.contains('counter-input') && counterInput.value > 1) {

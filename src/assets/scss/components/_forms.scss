@@ -70,12 +70,15 @@ select {
 .radio {
   @extend .checkbox;
   & + label {
+    padding-left: rem-calc(40);
+    font-size: rem-calc(20);
     &:before {
-      width: rem-calc(24);
-      height: rem-calc(24);
-      font-size: rem-calc(30);
-      line-height: rem-calc(22);
+      width: rem-calc(30);
+      height: rem-calc(30);
+      font-size: rem-calc(36);
+      line-height: unitless-calc(26, 36);
       font-weight: 700;
+      border: 2px solid #d0d0d0;
       border-radius: 50%;
     }
   }
@@ -83,6 +86,9 @@ select {
     & + label {
       &:before {
         content: '\2022';
+        border-color: #d0d0d0;
+        color: $secondary-color;
+        background-color: transparent;
       }
     }
   }
