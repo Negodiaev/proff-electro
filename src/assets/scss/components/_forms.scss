@@ -70,7 +70,7 @@ select {
 .radio {
   @extend .checkbox;
   & + label {
-    padding-left: rem-calc(40);
+    padding-left: rem-calc(42);
     font-size: rem-calc(20);
     &:before {
       width: rem-calc(30);

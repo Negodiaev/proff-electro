@@ -269,10 +269,8 @@
 }
 
 .product-tooltip {
-  z-index: 20;
   display: inline-block;
   vertical-align: middle;
-  padding: rem-calc(10 20 0);
   min-width: rem-calc(133);
   max-width: rem-calc(256);
   font-size: rem-calc(14);
@@ -281,8 +279,14 @@
   opacity: 1;
   background-color: $white;
   p {
-    margin-bottom: rem-calc(15);
+    margin-bottom: rem-calc(10);
   }
+}
+
+.product-tooltip-content {
+  position: relative;
+  padding: rem-calc(10 20 1);
+  background-color: $white;
 }
 
 .product-tooltip-title {
@@ -294,7 +298,7 @@
   border-top: 1px solid #d6d6d6;
   &.success {
     &:before {
-      content: '\2714';
+      content: '\2713';
       margin-right: rem-calc(4);
       font-size: rem-calc(20);
       color: $secondary-color;

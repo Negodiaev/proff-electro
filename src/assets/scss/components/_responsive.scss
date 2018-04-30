@@ -14,6 +14,13 @@
 }
 
 @include breakpoint(medium only) {
+  // Catalog page
+  .product-card-column {
+    &.picture-column {
+      border-bottom: 1px solid $medium-gray;
+    }
+  }
+
   // Checkout page
   .payment-type {
     flex-basis: auto;
@@ -389,6 +396,28 @@
     &.price-column {
       text-align: center;
     }
+    &.amount-column {
+      position: relative;
+    }
+    .cart-item-amount {
+      position: relative;
+      margin-bottom: rem-calc(40);
+      .close-button {
+        position: absolute;
+        top: 50%;
+        right: rem-calc(10);
+        transform: translateY(-50%);
+      }
+    }
+    .products-number {
+      position: absolute;
+      bottom: rem-calc(15);
+      left: rem-calc(10);
+      margin-bottom: 0;
+    }
+  }
+  .cart-item-price {
+    margin-bottom: rem-calc(40);
   }
   .cart-coupon-container,
   .cart-coupon-column {
@@ -415,6 +444,9 @@
   .person-item {
     &.checkboxes-item {
       margin-bottom: rem-calc(10);
+    }
+    &.comment-item {
+      align-items: flex-start;
     }
     & > label,
     & > .person-label {
@@ -446,7 +478,6 @@
     flex-wrap: nowrap;
   }
   .payment-type {
-    margin-bottom: rem-calc(10);
     &:not(:last-child) {
       margin-right: rem-calc(10);
     }
@@ -818,7 +849,6 @@
     }
   }
   .product-tooltip {
-    z-index: auto;
     &:before,
     &:after {
       content: '';
@@ -827,16 +857,7 @@
       left: 50%;
     }
     &:before {
-      margin-left: -6px;
-      width: 0;
-      height: 0;
-      border-style: solid;
-      border-width: 6px 6px 0 6px;
-      border-color: $white transparent transparent transparent;
-    }
-    &:after {
-      z-index: -1;
-      margin: -7px 0 0 -6px;
+      margin: -6px 0 0 -6px;
       width: 12px;
       height: 12px;
       border: 1px solid $secondary-color;
@@ -941,34 +962,148 @@
   }
 
   // Checkout page
+  .checkout-content {
+    padding-top: rem-calc(80);
+    padding-bottom: rem-calc(105);
+  }
   .checkout-card {
-    padding-left: rem-calc(80);
-    padding-right: rem-calc(80);
+    padding: rem-calc(46 80 56);
+    &:not(:last-child) {
+      margin-bottom: rem-calc(42);
+    }
+  }
+  .checkout-card-title {
+    margin-bottom: rem-calc(40);
+  }
+  .cart {
+    padding: rem-calc(40 0 0);
+    .checkout-card-title {
+      margin-bottom: rem-calc(42);
+      padding-left: rem-calc(35);
+    }
+  }
+  .cart-items {
+    margin-bottom: rem-calc(30);
   }
   .cart-item {
     flex-wrap: nowrap;
+    .product-card-title {
+      margin-bottom: rem-calc(5);
+    }
   }
   .cart-item-column {
     &.picture-column {
       flex-basis: rem-calc(190);
     }
     &.info-column {
+      align-self: flex-start;
       flex-basis: rem-calc(440);
+      padding-top: rem-calc(48);
     }
     &.price-column {
       flex-basis: rem-calc(190);
     }
     &.amount-column {
+      padding-top: rem-calc(30);
       flex-basis: rem-calc(360);
+    }
+    .product-card-picture {
+      img {
+        max-height: rem-calc(134);
+      }
+    }
+    .cart-item-amount {
+      margin-bottom: rem-calc(30);
+    }
+    .products-number {
+      bottom: rem-calc(-15);
+    }
+  }
+  .cart-item-price {
+    margin-bottom: rem-calc(8);
+  }
+  .cart-costs {
+    padding-left: rem-calc(80);
+    padding-right: rem-calc(80);
+    .cart-costs-title,
+    .cart-price {
+      margin-bottom: rem-calc(8);
+    }
+    .cart-coupon {
+      margin-bottom: rem-calc(24);
+      padding-top: rem-calc(27);
+      padding-left: rem-calc(30);
+    }
+  }
+  .person-item {
+    &:not(:last-child) {
+      margin-bottom: rem-calc(40);
+    }
+  }
+  .delivery {
+    padding-bottom: rem-calc(18);
+    .checkout-card-title {
+      margin-bottom: rem-calc(28);
+    }
+  }
+  .delivery-type {
+    margin-bottom: rem-calc(28);
+    & > label {
+      margin-bottom: rem-calc(16);
+    }
+    .help-text {
+      margin-bottom: rem-calc(40);
+      padding-right: rem-calc(30);
+    }
+    .person-item {
+      margin-bottom: rem-calc(25);
+    }
+  }
+  .checkout-costs-title {
+    margin-bottom: rem-calc(12);
+  }
+  .checkout-price {
+    margin-bottom: rem-calc(30);
+  }
+  .payment {
+    padding-top: rem-calc(81);
+    padding-bottom: rem-calc(42);
+    .checkout-card-title {
+      margin-bottom: rem-calc(45);
     }
   }
   .payment-type {
+    flex-grow: 0;
     margin-bottom: rem-calc(20);
     &:not(:last-child) {
       margin-right: rem-calc(20);
     }
+    .radio {
+      & + label {
+        padding-top: rem-calc(25);
+        padding-top: rem-calc(27);
+        &:before {
+          bottom: rem-calc(15);
+        }
+      }
+    }
+  }
+  .payment-type-title {
+    height: rem-calc(80);
+  }
+  .checkout-result {
+    padding-bottom: rem-calc(62);
+    .checkout-card-title {
+      margin-bottom: rem-calc(30);
+    }
+  }
+  .checkout-price {
+    &.final {
+      margin-bottom: rem-calc(52);
+    }
   }
   .checkout-costs-container {
+    margin-bottom: rem-calc(45);
     .checkout-costs {
       &:not(:last-child) {
         margin-right: rem-calc(72);
@@ -1049,10 +1184,10 @@
   // Checkout page
   .cart-item-column {
     &.info-column {
-      flex-basis: rem-calc(500);
+      flex-basis: rem-calc(410);
     }
     &.price-column {
-      flex-basis: rem-calc(200);
+      flex-basis: rem-calc(290);
     }
     &.amount-column {
       flex-basis: rem-calc(290);

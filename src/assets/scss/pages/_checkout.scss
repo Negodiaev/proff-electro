@@ -15,6 +15,9 @@
   select {
     height: rem-calc(45);
     border-color: #d9d9d9;
+    font-size: rem-calc(16);
+    font-weight: $global-weight-normal;
+    color: $body-font-color;
   }
 }
 
@@ -77,6 +80,7 @@
   }
   .close-button {
     position: static;
+    font-size: rem-calc(26);
   }
 }
 
@@ -155,7 +159,7 @@
 
 .person-checkbox-wrapper {
   &:not(:last-child) {
-    margin-right: rem-calc(45);
+    margin-right: rem-calc(47);
   }
 }
 
@@ -164,6 +168,12 @@
   label,
   .help-text {
     margin-bottom: rem-calc(10);
+  }
+  .help-text {
+    font-size: rem-calc(14);
+    line-height: unitless-calc(23, 14);
+    font-style: normal;
+    color: #686868;
   }
 }
 
@@ -232,7 +242,7 @@
         left: 50%;
         width: auto;
         height: auto;
-        font-size: rem-calc(20);
+        font-size: rem-calc(22);
         line-height: 1;
         transform: translateX(-50%);
       }
