@@ -1110,6 +1110,36 @@
       }
     }
   }
+
+  // Services page
+  .services-content {
+    padding-bottom: rem-calc(48);
+    .breadcrumbs-wrapper {
+      margin-bottom: rem-calc(48);
+    }
+    .page-title {
+      margin-bottom: rem-calc(34);
+    }
+  }
+  .services {
+    .column-block {
+      margin-bottom: rem-calc(56);
+    }
+  }
+  .services-item-picture {
+    img {
+      width: auto;
+      max-width: none;
+      height: rem-calc(220);
+    }
+  }
+  .services-item-info {
+    padding: rem-calc(20 20 31);
+  }
+  .services-item-title {
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(5);
+  }
 }
 
 @include breakpoint(xlarge) {
