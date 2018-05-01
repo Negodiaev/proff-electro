@@ -2,9 +2,10 @@
 
 ## Pages list
 
-* [Home page](https://negodiaev.github.io/proff-electro/){:target="\_blank"}
-* [Catalog](https://negodiaev.github.io/proff-electro/catalog.html){:target="\_blank"}
-* [Product](https://negodiaev.github.io/proff-electro/product.html){:target="\_blank"}
-* [Product is out of stock](https://negodiaev.github.io/proff-electro/product-out.html){:target="\_blank"}
-* [Checkout](https://negodiaev.github.io/proff-electro/checkout.html){:target="\_blank"}
-* [Services](https://negodiaev.github.io/proff-electro/services.html){:target="\_blank"}
+* [Home page](https://negodiaev.github.io/proff-electro/)
+* [Catalog](https://negodiaev.github.io/proff-electro/catalog.html)
+* [Product](https://negodiaev.github.io/proff-electro/product.html)
+* [Product is out of stock](https://negodiaev.github.io/proff-electro/product-out.html)
+* [Checkout](https://negodiaev.github.io/proff-electro/checkout.html)
+* [Services](https://negodiaev.github.io/proff-electro/services.html)
+* [One service](https://negodiaev.github.io/proff-electro/service.html)

@@ -1,0 +1,32 @@
+.service-content {
+  .subscription-content {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.service-card {
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(10);
+}
+
+.service-benefit {
+  padding-top: rem-calc(20);
+}
+
+.service-benefit-picture {
+  margin-bottom: rem-calc(20);
+  text-align: center;
+}
+
+.service-benefit-info {
+  p {
+    margin-bottom: rem-calc(12);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(28, 15);
+  }
+}
+
+.service-benefit-title {
+  line-height: unitless-calc(28, 20);
+  color: $secondary-color;
+}

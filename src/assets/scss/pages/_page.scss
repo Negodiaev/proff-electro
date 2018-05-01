@@ -1,3 +1,57 @@
+.page-content {
+  .page-title {
+    margin-bottom: rem-calc(17);
+  }
+  h4 {
+    color: $body-font-color;
+  }
+  p,
+  img,
+  ul,
+  table {
+    margin-bottom: rem-calc(15);
+  }
+  ul {
+    margin-left: 0;
+  }
+  li {
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(5);
+    font-size: rem-calc(15);
+    line-height: unitless-calc(22, 15);
+    &:before {
+      content: '\2022';
+      vertical-align: middle;
+      margin-right: rem-calc(10);
+      font-size: rem-calc(32);
+      line-height: 10px;
+      font-weight: $global-weight-bold;
+      color: #00b3b3;
+    }
+  }
+  table {
+    tr {
+      &:not(:last-child) {
+        border-bottom: 1px solid #bfbfbf;
+      }
+    }
+    th,
+    td {
+      padding-right: rem-calc(10);
+    }
+    th {
+      font-size: rem-calc(15);
+      line-height: unitless-calc(25, 15);
+      font-weight: $global-weight-normal;
+      text-align: left;
+      color: #a5a5a5;
+    }
+    td {
+      line-height: unitless-calc(25, 16);
+    }
+  }
+}
+
 .page-title {
   font-weight: $global-weight-normal;
 }

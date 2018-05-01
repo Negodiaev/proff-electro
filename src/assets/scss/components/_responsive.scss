@@ -318,6 +318,34 @@
     }
   }
 
+  // Inner page
+  .page-content {
+    table {
+      tr {
+        &:not(:last-child) {
+          border-bottom: 0;
+          td {
+            border-bottom: 1px solid #bfbfbf;
+          }
+        }
+      }
+      th {
+        padding-top: rem-calc(5);
+        padding-bottom: rem-calc(5);
+      }
+      td {
+        padding-top: rem-calc(21);
+        padding-bottom: rem-calc(21);
+        &:nth-child(2) {
+          width: rem-calc(155);
+        }
+        &:last-child {
+          width: rem-calc(110);
+        }
+      }
+    }
+  }
+
   // Catalog page
   .sorting {
     .select {
@@ -1140,6 +1168,70 @@
     padding-top: rem-calc(5);
     padding-bottom: rem-calc(5);
   }
+
+  // Service page
+  .service-content {
+    padding-bottom: rem-calc(44);
+    .breadcrumbs-wrapper {
+      margin-bottom: rem-calc(8);
+    }
+    .subscription-content {
+      margin-bottom: rem-calc(38);
+      padding-top: rem-calc(60);
+      .subscription-title {
+        margin-bottom: rem-calc(94);
+      }
+    }
+    .subscription-form-container {
+      max-width: rem-calc(930);
+    }
+    .subscription-form-item {
+      &:first-child {
+        margin-right: rem-calc(24);
+      }
+      &:last-child {
+        flex: 0 0 220px;
+      }
+    }
+  }
+  .service-card {
+    &.page-content {
+      margin-bottom: rem-calc(46);
+      padding: rem-calc(55 80 30);
+      img {
+        margin-top: rem-calc(12);
+        width: 100%;
+        max-width: rem-calc(280);
+      }
+    }
+  }
+  .page-content {
+    h4 {
+      margin-bottom: rem-calc(22);
+    }
+    p {
+      margin-bottom: rem-calc(60);
+    }
+    ul {
+      margin-bottom: rem-calc(56);
+    }
+    table {
+      margin-bottom: rem-calc(34);
+    }
+  }
+  .service-benefit {
+    margin-bottom: rem-calc(20);
+    display: flex;
+    padding: rem-calc(44 70 20 20);
+  }
+  .service-benefit-picture {
+    padding-top: rem-calc(8);
+    padding-right: rem-calc(20);
+    flex: 0 0 80px;
+  }
+  .service-benefit-title {
+    margin-bottom: rem-calc(14);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -1221,6 +1313,20 @@
     }
     &.amount-column {
       flex-basis: rem-calc(290);
+    }
+  }
+
+  // Service page
+  .service-content {
+    .subscription-form-container {
+      padding-left: rem-calc(18);
+    }
+  }
+  .service-card {
+    &.page-content {
+      .page-content-inner {
+        margin-left: rem-calc(-48);
+      }
     }
   }
 }

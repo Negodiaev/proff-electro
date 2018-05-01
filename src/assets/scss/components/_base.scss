@@ -74,6 +74,9 @@ svg {
 .section-light {
   background-color: get-color(light);
 }
+.section-light-gray {
+  background-color: $light-gray;
+}
 .section-dark {
   color: $white;
   background-color: get-color(text);
