@@ -9,3 +9,4 @@
 * [Checkout](https://negodiaev.github.io/proff-electro/checkout.html)
 * [Services](https://negodiaev.github.io/proff-electro/services.html)
 * [One service](https://negodiaev.github.io/proff-electro/service.html)
+* [Promotions](https://negodiaev.github.io/proff-electro/promotions.html)

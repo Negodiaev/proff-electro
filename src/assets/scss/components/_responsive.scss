@@ -1232,6 +1232,24 @@
   .service-benefit-title {
     margin-bottom: rem-calc(14);
   }
+
+  // Promotions page
+  .promotions-content {
+    .page-title {
+      margin-bottom: rem-calc(30);
+    }
+    .services {
+      margin-bottom: rem-calc(42);
+      .column-block {
+        margin-bottom: rem-calc(36);
+      }
+    }
+    .services-item-picture {
+      img {
+        height: rem-calc(230);
+      }
+    }
+  }
 }
 
 @include breakpoint(xlarge) {
