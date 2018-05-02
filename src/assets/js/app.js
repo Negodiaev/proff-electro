@@ -154,6 +154,71 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //------------------------------------------------------------------------//
 
   //------------------------------------------------------------------------//
+  //Promotion sliders
+  var promotionSwiper = new Swiper('#promotion-slider', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    loop: true,
+    autoHeight: true,
+    // loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '#promotion-slider-next',
+      prevEl: '#promotion-slider-prev'
+    },
+    pagination: {
+      el: '#promotion-slider-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      543: {
+        // when window width is <= 543px
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      763: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+      1023: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      }
+    }
+  });
+
+  var promotionSecondSwiper = new Swiper('#promotion-slider-2', {
+    slidesPerView: 4,
+    slidesPerGroup: 4,
+    loop: true,
+    autoHeight: true,
+    // loopFillGroupWithBlank: true,
+    navigation: {
+      nextEl: '#promotion-slider-2-next',
+      prevEl: '#promotion-slider-2-prev'
+    },
+    pagination: {
+      el: '#promotion-slider-2-pagination',
+      clickable: true
+    },
+    breakpoints: {
+      543: {
+        // when window width is <= 543px
+        slidesPerView: 1,
+        slidesPerGroup: 1
+      },
+      763: {
+        slidesPerView: 2,
+        slidesPerGroup: 2
+      },
+      1023: {
+        slidesPerView: 3,
+        slidesPerGroup: 3
+      }
+    }
+  });
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
   //Product gallery
   var productGallery = new Swiper('#product-gallery', {
     spaceBetween: 10,

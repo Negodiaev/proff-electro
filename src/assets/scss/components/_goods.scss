@@ -55,6 +55,7 @@
 }
 
 .goods-item-picture {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -62,6 +63,12 @@
   padding-top: rem-calc(40);
   padding-bottom: rem-calc(40);
   height: rem-calc(162);
+  background-color: $white;
+  .product-features {
+    position: absolute;
+    top: 5px;
+    left: 1px;
+  }
 }
 
 .goods-item-type {

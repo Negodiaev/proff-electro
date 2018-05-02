@@ -1,0 +1,24 @@
+.promotion-products {
+  padding: rem-calc(20 0);
+  .content-slider-wrapper {
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        border-color: $dark-gray;
+        background-color: transparent;
+      }
+      .swiper-pagination-bullet-active {
+        background-color: $dark-gray;
+      }
+    }
+  }
+  .goods-slider-wrapper {
+    &:not(:last-child) {
+      margin-bottom: rem-calc(20);
+    }
+  }
+}
+
+.promotion-products-title {
+  margin-bottom: rem-calc(15);
+  font-weight: $global-weight-normal;
+}

@@ -269,6 +269,7 @@
 }
 
 .product-tooltip {
+  z-index: 3000;
   display: inline-block;
   vertical-align: middle;
   min-width: rem-calc(133);

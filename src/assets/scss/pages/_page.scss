@@ -1,6 +1,6 @@
 .page-content {
   .page-title {
-    margin-bottom: rem-calc(17);
+    margin-bottom: rem-calc(12);
   }
   h4 {
     color: $body-font-color;
@@ -8,8 +8,12 @@
   p,
   img,
   ul,
-  table {
+  table,
+  button {
     margin-bottom: rem-calc(15);
+  }
+  img {
+    margin-bottom: rem-calc(20);
   }
   ul {
     margin-left: 0;
@@ -49,6 +53,14 @@
     td {
       line-height: unitless-calc(25, 16);
     }
+  }
+  .button {
+    padding-top: rem-calc(12);
+    padding-bottom: rem-calc(12);
+    width: rem-calc(240);
+    line-height: unitless-calc(19, 17);
+    font-weight: 600;
+    color: #746127;
   }
 }
 
