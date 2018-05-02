@@ -510,6 +510,23 @@
       margin-right: rem-calc(10);
     }
   }
+
+  // 404 page
+  .error-content {
+    padding-bottom: rem-calc(56);
+    .page-content {
+      padding-top: rem-calc(60);
+      padding-bottom: rem-calc(120);
+      background-size: rem-calc(1010);
+      background-position: rem-calc(-202) 56%;
+      .page-title {
+        font-size: rem-calc(64);
+      }
+      p {
+        font-size: rem-calc(24);
+      }
+    }
+  }
 }
 
 @include breakpoint(large) {
@@ -1282,6 +1299,28 @@
   }
   .promotion-products-title {
     margin-bottom: rem-calc(52);
+  }
+
+  // 404 page
+  .error-content {
+    .breadcrumbs-wrapper {
+      margin-bottom: rem-calc(24);
+    }
+    .service-card {
+      &.page-content {
+        padding: rem-calc(187 0 188);
+      }
+    }
+    .page-content {
+      background-size: rem-calc(1383);
+      .page-title {
+        margin-bottom: rem-calc(31);
+        font-size: rem-calc(78);
+      }
+      p {
+        font-size: rem-calc(30);
+      }
+    }
   }
 }
 

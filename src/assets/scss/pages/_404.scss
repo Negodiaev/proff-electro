@@ -1,0 +1,16 @@
+.error-content {
+  .page-content {
+    padding: rem-calc(20 20 300);
+    background-image: url(../img/bg-404.png);
+    background-repeat: no-repeat;
+    background-position: right 78% top 95%;
+    background-size: rem-calc(800);
+    .page-title {
+      font-size: rem-calc(52);
+    }
+    p {
+      font-size: rem-calc(20);
+      line-height: 1.5;
+    }
+  }
+}
