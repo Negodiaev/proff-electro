@@ -1,0 +1,26 @@
+<div class="modal reveal" id="callback-modal" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <h2 class="modal-title title text-center">Заказ обратного звонка</h2>
+  <form>
+    <div class="modal-fields">
+      <label for="modal-tel">Укажите свой телефон</label>
+      <input type="text" id="modal-tel">
+      <label for="modal-name">Представьтесь, пожалуйста</label>
+      <input type="text" id="modal-name">
+    </div>
+    <button type="button" class="modal-form-button button button-primary large" data-open="callback-modal-success">Заказать звонок</button>
+  </form>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-success modal reveal text-center" id="callback-modal-success" data-reveal data-animation-in="fade-in" data-animation-out="fade-out">
+  <svg class="modal-success-icon icon" width="129" height="120">
+    <use xlink:href="#check-mark"></use>
+  </svg>
+  <div class="modal-success-title modal-title title">Спасибо!</div>
+  <p>Заявка успешно отправлена,
+    <br>ожидайте звонка</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>

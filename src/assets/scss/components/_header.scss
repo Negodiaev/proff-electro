@@ -15,8 +15,10 @@
   }
   .callback-order {
     border-bottom: 1px solid get-color(text);
+    outline: 0;
     transition: border-color 0.15s ease;
-    &:hover {
+    &:hover,
+    &:focus {
       border-color: transparent;
       color: get-color(text);
     }

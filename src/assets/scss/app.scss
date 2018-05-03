@@ -3,7 +3,7 @@
 // @import 'settings';
 @import 'variables';
 @import 'foundation';
-// @import 'motion-ui';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 @include foundation-grid;
@@ -36,7 +36,7 @@
 @include foundation-progress-bar;
 @include foundation-slider;
 @include foundation-sticky;
-// @include foundation-reveal;
+@include foundation-reveal;
 @include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;
@@ -50,7 +50,7 @@
 
 // @include foundation-prototype-classes;
 
-// @include motion-ui-transitions;
+@include motion-ui-transitions;
 // @include motion-ui-animations;
 
 // Custom styles
@@ -71,6 +71,7 @@
 @import 'components/articles';
 @import 'components/about';
 @import 'components/subscription';
+@import 'components/modal';
 
 @import 'components/breadcrumbs';
 @import 'components/forms';

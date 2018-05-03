@@ -1,0 +1,47 @@
+.modal {
+  label {
+    margin-bottom: rem-calc(10);
+  }
+  input {
+    margin-bottom: rem-calc(20);
+  }
+  .close-button {
+    top: rem-calc(10);
+    right: rem-calc(10);
+    font-weight: 300;
+  }
+}
+
+.modal-title {
+  margin-bottom: rem-calc(30);
+  font-weight: $global-weight-bold;
+}
+
+.modal-success-icon {
+  margin-bottom: rem-calc(30);
+}
+
+.modal-success-title {
+  font-size: rem-calc(44);
+  color: $anchor-color;
+}
+
+.modal-fields {
+  padding-bottom: rem-calc(15);
+}
+
+.modal-form-button {
+  display: block;
+  margin: 0 auto;
+  padding-top: rem-calc(19);
+  padding-bottom: rem-calc(20);
+  width: 100%;
+  max-width: rem-calc(298);
+  line-height: unitless-calc(19, 17);
+  font-weight: 600;
+  color: #746127;
+  &:hover,
+  &:focus {
+    color: #746127;
+  }
+}

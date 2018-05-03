@@ -532,6 +532,38 @@
   .search-results-title {
     font-size: rem-calc(25);
   }
+
+  // Modal
+  .modal {
+    padding: rem-calc(73 80 67);
+    label {
+      margin-bottom: rem-calc(13);
+    }
+    input {
+      margin-bottom: rem-calc(41);
+    }
+    .close-button {
+      font-size: rem-calc(56);
+      line-height: rem-calc(32);
+    }
+  }
+  .modal-success {
+    padding-top: rem-calc(118);
+    padding-bottom: rem-calc(88);
+  }
+  .modal-title {
+    margin-bottom: rem-calc(70);
+  }
+  .modal-success-icon {
+    margin-bottom: rem-calc(57);
+  }
+  .modal-success-title {
+    margin-bottom: rem-calc(40);
+    font-size: rem-calc(58);
+  }
+  .modal-fields {
+    padding-bottom: rem-calc(28);
+  }
 }
 
 @include breakpoint(large) {
@@ -1375,6 +1407,20 @@
   .search-sidebar-wrapper:last-child:not(:first-child) {
     float: left;
     clear: none;
+  }
+
+  // Modal
+  .modal {
+    overflow: visible;
+    .close-button {
+      top: rem-calc(-5);
+      right: rem-calc(-62);
+      color: $white;
+      &:hover,
+      &:focus {
+        color: $light-gray;
+      }
+    }
   }
 }
 
