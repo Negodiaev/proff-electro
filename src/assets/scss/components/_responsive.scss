@@ -29,15 +29,17 @@
 
 @include breakpoint(small only) {
   .header {
-    .logo,
     .mega-menu-container {
       margin-left: rem-calc(-10);
       margin-right: rem-calc(-10);
     }
     .logo {
+      margin-top: rem-calc(-3);
+      margin-left: rem-calc(-20);
+      margin-right: rem-calc(-20);
       padding-top: rem-calc(1);
       a {
-        max-width: rem-calc(202);
+        max-width: rem-calc(222);
       }
     }
   }
@@ -569,9 +571,6 @@
 @include breakpoint(large) {
   .header {
     padding-top: rem-calc(30);
-    .logo {
-      padding-top: rem-calc(12);
-    }
     .callback {
       padding-left: rem-calc(20);
     }
@@ -909,7 +908,7 @@
     &.details-column {
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: space-between;
       flex: 0 0 rem-calc(200);
       order: 3;
       max-width: rem-calc(200);

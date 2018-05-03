@@ -10,5 +10,6 @@
 * [Services](https://negodiaev.github.io/proff-electro/services.html)
 * [One service](https://negodiaev.github.io/proff-electro/service.html)
 * [Promotions](https://negodiaev.github.io/proff-electro/promotions.html)
-* [Promotion](https://negodiaev.github.io/proff-electro/promotion.html)
+* [One promotion](https://negodiaev.github.io/proff-electro/promotion.html)
 * [Search results](https://negodiaev.github.io/proff-electro/results.html)
+* [404](https://negodiaev.github.io/proff-electro/404.html)
