@@ -1,0 +1,26 @@
+.results-content {
+  .page-title {
+    margin-bottom: rem-calc(20);
+  }
+  .search-results {
+    padding-bottom: rem-calc(10);
+  }
+}
+
+.search-results-title {
+  margin-bottom: rem-calc(10);
+  font-weight: $global-weight-normal;
+}
+
+.search-sidebar {
+  .catalog-item-menu {
+    margin-bottom: rem-calc(10);
+    padding-top: rem-calc(15);
+    padding-bottom: rem-calc(20);
+    border: 1px solid #d6d6d6;
+    a {
+      padding-left: rem-calc(18);
+      padding-right: rem-calc(18);
+    }
+  }
+}
