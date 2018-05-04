@@ -34,15 +34,6 @@
 .goods-item {
   border-right: 1px solid $medium-gray;
   color: $anchor-color;
-  a {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
-    border-bottom: 1px solid #5f7172;
-    &:hover {
-      border-color: transparent;
-    }
-  }
   .goods-item-title {
     margin-bottom: rem-calc(15);
   }
@@ -68,6 +59,19 @@
     position: absolute;
     top: 5px;
     left: 1px;
+  }
+}
+
+.goods-item-info {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    border-bottom: 1px solid #5f7172;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
   }
 }
 

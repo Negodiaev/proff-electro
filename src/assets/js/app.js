@@ -161,10 +161,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     loop: true,
     autoHeight: true,
     // loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '#promotion-slider-next',
-      prevEl: '#promotion-slider-prev'
-    },
     pagination: {
       el: '#promotion-slider-pagination',
       clickable: true
@@ -192,10 +188,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
     loop: true,
     autoHeight: true,
     // loopFillGroupWithBlank: true,
-    navigation: {
-      nextEl: '#promotion-slider-2-next',
-      prevEl: '#promotion-slider-2-prev'
-    },
     pagination: {
       el: '#promotion-slider-2-pagination',
       clickable: true
@@ -236,5 +228,22 @@ document.addEventListener('DOMContentLoaded', function(event) {
   });
   productGallery.controller.control = galleryThumbs;
   galleryThumbs.controller.control = productGallery;
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Filter tooltips
+  // var filterCheckboxes = document.querySelectorAll('.filter input.checkbox');
+
+  // Array.prototype.forEach.call(filterCheckboxes, function(element) {
+  //   element.addEventListener('click', function() {
+  //     var _this = this,
+  //       tooltip = new Foundation.Tooltip(_this.nextElementSibling.querySelector('.filter-tooltip'), {});
+  //     console.log(tooltip);
+
+  //     if (this.checked) {
+  //       tooltip.foundation('show');
+  //     }
+  //   });
+  // });
   //------------------------------------------------------------------------//
 });

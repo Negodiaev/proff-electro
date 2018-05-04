@@ -81,7 +81,8 @@
   .icon {
     margin-right: rem-calc(14);
   }
-  &:hover {
+  &:hover,
+  &:focus {
     color: $secondary-color;
     background-color: transparent;
   }
