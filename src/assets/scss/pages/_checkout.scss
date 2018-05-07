@@ -128,7 +128,8 @@
   width: rem-calc(180);
   font-weight: 600;
   color: #746127;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #746127;
   }
 }
@@ -291,7 +292,8 @@
   line-height: unitless-calc(19, 17);
   font-weight: 600;
   color: #746127;
-  &:hover {
+  &:hover,
+  &:focus {
     color: #746127;
   }
 }

@@ -566,6 +566,19 @@
   .modal-fields {
     padding-bottom: rem-calc(28);
   }
+
+  // Login page
+  .login-content {
+    .person-item {
+      padding-right: rem-calc(80);
+      & > label {
+        flex-basis: 110px;
+      }
+    }
+  }
+  .password-notice {
+    padding-left: rem-calc(110);
+  }
 }
 
 @include breakpoint(large) {
@@ -1420,6 +1433,36 @@
         color: $light-gray;
       }
     }
+  }
+
+  // User page
+  .user-content {
+    padding-bottom: rem-calc(103);
+    .breadcrumbs-wrapper {
+      margin-bottom: rem-calc(50);
+    }
+  }
+  .user-card {
+    padding-top: rem-calc(71);
+    padding-bottom: rem-calc(65);
+  }
+  .user-card-title {
+    margin-bottom: rem-calc(41);
+  }
+
+  // Login page
+  .login-content {
+    .person-items {
+      margin-bottom: rem-calc(16);
+    }
+    .person-item {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(43);
+      }
+    }
+  }
+  .password-notice {
+    padding-bottom: rem-calc(44);
   }
 }
 

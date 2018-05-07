@@ -1,0 +1,35 @@
+.login-content {
+  margin: 0 auto;
+  max-width: rem-calc(600);
+  .person-items {
+    margin-bottom: rem-calc(10);
+  }
+  .person-item {
+    & > label {
+      padding-right: rem-calc(12);
+    }
+  }
+}
+
+.password-notice {
+  padding-bottom: rem-calc(15);
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: rem-calc(10);
+    border-bottom: 1px solid $secondary-color;
+    color: $secondary-color;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+.login-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: rem-calc(12);
+  max-width: rem-calc(220);
+}

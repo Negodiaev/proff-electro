@@ -1,0 +1,69 @@
+<div class="login-page user-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="user-content content section-light-gray">
+          <div class="breadcrumbs-wrapper">
+            <div class="column row">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Главная страница</a>
+                  </li>
+                  <li>
+                    <a href="#">Категория</a>
+                  </li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Активная категория</li>
+                </ul>
+              </nav>
+              <!-- /.breadcrumbs -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.breadcrumbs-wrapper -->
+          <div class="row">
+            <div class="columns medium-10 medium-centered large-8">
+              <div class="login user-card checkout-card content-card">
+                <div class="login-content">
+                  <h1 class="user-card-title checkout-card-title page-title title text-center">Вход</h1>
+                  <form>
+                    <div class="person-items">
+                      <div class="person-item">
+                        <label for="person-mail" class="medium-text-right middle">Email:</label>
+                        <input type="text" id="person-mail">
+                      </div>
+                      <div class="person-item">
+                        <label for="person-password" class="medium-text-right middle">Пароль:</label>
+                        <input type="text" id="person-password">
+                      </div>
+                    </div>
+                    <div class="password-notice">
+                      <a href="#">Забыли пароль?</a>
+                    </div>
+                    <button class="login-button checkout-button button button-primary large">Войти</button>
+                  </form>
+                </div>
+                <!-- /.login-content -->
+              </div>
+              <!-- /.login -->
+            </div>
+            <!-- /.columns -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->
