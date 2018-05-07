@@ -13,4 +13,5 @@
 * [One promotion](https://negodiaev.github.io/proff-electro/promotion.html)
 * [Search results](https://negodiaev.github.io/proff-electro/results.html)
 * [Login](https://negodiaev.github.io/proff-electro/login.html)
+* [Register](https://negodiaev.github.io/proff-electro/register.html)
 * [404](https://negodiaev.github.io/proff-electro/404.html)

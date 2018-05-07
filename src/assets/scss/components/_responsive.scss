@@ -165,6 +165,13 @@
       width: 50%;
     }
   }
+
+  // Register page
+  .person-checkbox-wrapper {
+    &:not(:last-child) {
+      margin-right: rem-calc(30);
+    }
+  }
 }
 
 @include breakpoint(medium) {
@@ -571,13 +578,38 @@
   .login-content {
     .person-item {
       padding-right: rem-calc(80);
-      & > label {
+      & > label,
+      & > .person-label {
         flex-basis: 110px;
       }
     }
   }
   .password-notice {
     padding-left: rem-calc(110);
+  }
+
+  // Register page
+  .register-notice {
+    display: flex;
+    align-items: center;
+  }
+  .register-notice-content {
+    padding-right: rem-calc(20);
+    max-width: rem-calc(600);
+  }
+  .register-notice-picture {
+    padding: rem-calc(20);
+  }
+  .register-content {
+    .person-item {
+      & > label,
+      & > .person-label {
+        flex-basis: 150px;
+      }
+    }
+  }
+  .license-agreement {
+    padding-left: rem-calc(150);
   }
 }
 
@@ -1463,6 +1495,55 @@
   }
   .password-notice {
     padding-bottom: rem-calc(44);
+  }
+
+  // Register page
+  .register-page {
+    .user-content {
+      padding-bottom: rem-calc(88);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(10);
+      }
+    }
+  }
+  .register {
+    padding-top: rem-calc(66);
+    .user-card-title {
+      margin-bottom: rem-calc(54);
+    }
+  }
+  .register-notice {
+    margin-bottom: rem-calc(97);
+    max-width: rem-calc(938);
+    padding: rem-calc(67 41 56);
+    box-shadow: 0 0 65px rgba(0, 0, 0, 0.05);
+  }
+  .register-notice-picture {
+    margin-bottom: 0;
+    padding: rem-calc(25 55);
+  }
+  .register-notice-content {
+    p {
+      font-size: rem-calc(17);
+      line-height: unitless-calc(28, 17);
+    }
+  }
+  .register-notice-title {
+    margin-bottom: rem-calc(29);
+    font-size: rem-calc(35);
+  }
+  .register-content {
+    .person-items {
+      margin-bottom: rem-calc(18);
+    }
+    .person-item {
+      &:not(:last-child) {
+        margin-bottom: rem-calc(39);
+      }
+    }
+  }
+  .license-agreement {
+    margin-bottom: rem-calc(40);
   }
 }
 

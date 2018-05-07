@@ -1,0 +1,40 @@
+.register-content {
+  max-width: rem-calc(680);
+  .user-card-title {
+    margin-bottom: rem-calc(20);
+  }
+}
+
+.register-notice {
+  margin: 0 auto rem-calc(20);
+  padding: rem-calc(20 10 10);
+  max-width: rem-calc(750);
+  background-color: $white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.register-notice-picture {
+  margin-bottom: rem-calc(20);
+  text-align: center;
+}
+
+.register-notice-content {
+  p {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+.register-notice-title {
+  margin-bottom: rem-calc(15);
+  font-size: rem-calc(26);
+  line-height: 1;
+  font-weight: 300;
+}
+
+.license-agreement {
+  margin-bottom: rem-calc(15);
+}
+
+.register-button {
+  max-width: rem-calc(267);
+}

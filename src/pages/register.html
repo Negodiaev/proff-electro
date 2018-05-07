@@ -1,0 +1,113 @@
+<div class="register-page user-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="user-content content section-light-gray">
+          <div class="breadcrumbs-wrapper">
+            <div class="column row">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Главная страница</a>
+                  </li>
+                  <li>
+                    <a href="#">Категория</a>
+                  </li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Активная категория</li>
+                </ul>
+              </nav>
+              <!-- /.breadcrumbs -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.breadcrumbs-wrapper -->
+          <div class="column row">
+            <div class="register user-card checkout-card content-card">
+              <h1 class="user-card-title checkout-card-title page-title title text-center">Регистрация</h1>
+              <div class="register-notice">
+                <div class="register-notice-picture">
+                  <svg class="icon" width="127" height="108">
+                    <use xlink:href="#register-notice-1"></use>
+                  </svg>
+                </div>
+                <div class="register-notice-content">
+                  <div class="register-notice-title">Впервые у нас?</div>
+                  <p>Регистрация на сайте xxx.ru дает возможность использовать накопительные системы скидок на всю продукцию,
+                    а так же расширенный функционал для подготовки смет и оптовых закупок.</p>
+                </div>
+              </div>
+              <!-- /.register-notice -->
+              <div class="register-content login-content">
+                <form>
+                  <div class="person-items">
+                    <div class="person-item checkboxes-item">
+                      <div class="person-label medium-text-right">Статус:</div>
+                      <div class="person-checkboxes">
+                        <div class="person-checkbox-wrapper">
+                          <input type="radio" name="person-status" value="1" id="person-status-1" class="radio">
+                          <label for="person-status-1">Физ. лицо</label>
+                        </div>
+                        <div class="person-checkbox-wrapper">
+                          <input type="radio" name="person-status" value="2" id="person-status-2" class="radio" checked>
+                          <label for="person-status-2">Организация</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="person-item">
+                      <label for="person-name" class="medium-text-right middle">ФИО:</label>
+                      <input type="text" id="person-name">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-mail" class="medium-text-right middle">Email:</label>
+                      <input type="text" id="person-mail">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-tel" class="medium-text-right middle">Телефон:</label>
+                      <input type="text" id="person-tel">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-company" class="medium-text-right middle">Компания:</label>
+                      <input type="text" id="person-company">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-tax-number" class="medium-text-right middle">ИНН:</label>
+                      <input type="text" id="person-tax-number">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-password" class="medium-text-right middle">Пароль:</label>
+                      <input type="text" id="person-password">
+                    </div>
+                    <div class="person-item">
+                      <label for="person-password-repeat" class="medium-text-right middle">Повтор пароля:</label>
+                      <input type="text" id="person-password-repeat">
+                    </div>
+                  </div>
+                  <div class="license-agreement">
+                    <input type="checkbox" name="custom-сheckbox" id="license-agreement-checkbox" class="checkbox">
+                    <label for="license-agreement-checkbox">Я принимаю пользовательское соглашение</label>
+                  </div>
+                  <button class="register-button login-button checkout-button button button-primary large">Зарегистрироваться</button>
+                </form>
+              </div>
+              <!-- /.register-content -->
+            </div>
+            <!-- /.register -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->
