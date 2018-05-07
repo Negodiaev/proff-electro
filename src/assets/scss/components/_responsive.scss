@@ -14,6 +14,13 @@
 }
 
 @include breakpoint(medium only) {
+  .banners-col-small {
+    display: flex;
+    .banner {
+      width: 50%;
+    }
+  }
+
   // Catalog page
   .product-card-column {
     &.picture-column {
@@ -24,6 +31,13 @@
   // Checkout page
   .payment-type {
     flex-basis: auto;
+  }
+
+  // Register page
+  .person-checkbox-wrapper {
+    &:not(:last-child) {
+      margin-right: rem-calc(30);
+    }
   }
 }
 
@@ -154,22 +168,6 @@
   .cart-item-column {
     &.price-column {
       padding-top: 0;
-    }
-  }
-}
-
-@include breakpoint(medium only) {
-  .banners-col-small {
-    display: flex;
-    .banner {
-      width: 50%;
-    }
-  }
-
-  // Register page
-  .person-checkbox-wrapper {
-    &:not(:last-child) {
-      margin-right: rem-calc(30);
     }
   }
 }
@@ -572,6 +570,16 @@
   }
   .modal-fields {
     padding-bottom: rem-calc(28);
+  }
+
+  // User page
+  .user-links {
+    .column-block {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .user-link-picture {
+    height: rem-calc(100);
   }
 
   // Login page
@@ -1469,20 +1477,48 @@
 
   // User page
   .user-content {
-    padding-bottom: rem-calc(103);
+    padding-bottom: rem-calc(9);
     .breadcrumbs-wrapper {
-      margin-bottom: rem-calc(50);
+      margin-bottom: rem-calc(29);
+    }
+    .page-title {
+      margin-bottom: rem-calc(65);
     }
   }
   .user-card {
     padding-top: rem-calc(71);
     padding-bottom: rem-calc(65);
   }
-  .user-card-title {
-    margin-bottom: rem-calc(41);
+  .user-links {
+    .column,
+    .columns {
+      padding-left: rem-calc(30);
+      padding-right: rem-calc(30);
+    }
+    .column-block {
+      margin-bottom: rem-calc(65);
+    }
+  }
+  .user-link {
+    padding-top: rem-calc(31);
+    padding-bottom: rem-calc(35);
+  }
+  .user-link-picture {
+    margin-bottom: rem-calc(14);
   }
 
   // Login page
+  .login-page {
+    .user-content {
+      padding-bottom: rem-calc(103);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(50);
+      }
+      .user-card-title {
+        margin-bottom: rem-calc(41);
+      }
+    }
+  }
   .login-content {
     .person-items {
       margin-bottom: rem-calc(16);

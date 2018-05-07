@@ -1,3 +1,59 @@
 .user-content {
   padding-bottom: rem-calc(10);
+  .page-title {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+.user-card {
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: rem-calc(10);
+    border-bottom: 1px solid $secondary-color;
+    color: $secondary-color;
+    &:hover,
+    &:focus {
+      border-color: transparent;
+    }
+  }
+}
+
+.user-links {
+  margin-bottom: 0;
+  .column-block {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.user-link {
+  display: block;
+  padding: rem-calc(20 10);
+  border: 7px solid transparent;
+  font-size: rem-calc(20);
+  background-color: $white;
+  &:hover,
+  &:focus {
+    border-color: $primary-color;
+    color: $anchor-color;
+    .user-link-title {
+      border-color: transparent;
+    }
+  }
+}
+
+.user-link-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem-calc(10);
+}
+
+.user-link-title {
+  display: inline-block;
+  vertical-align: middle;
+  border-bottom: 1px solid $anchor-color;
+  line-height: 1;
+  transition: border-color 0.15s ease;
 }
