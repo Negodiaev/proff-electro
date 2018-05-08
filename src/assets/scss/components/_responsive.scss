@@ -678,6 +678,17 @@
     max-width: rem-calc(400);
     margin-left: rem-calc(10);
   }
+
+  // Favourites page
+  .favourites-info {
+    font-size: rem-calc(17);
+    p {
+      line-height: unitless-calc(28, 17);
+    }
+  }
+  .favourites-items {
+    max-width: rem-calc(900);
+  }
 }
 
 @include breakpoint(large) {
@@ -1728,6 +1739,27 @@
   .profile-documents {
     padding-top: rem-calc(5);
     padding-bottom: rem-calc(23);
+  }
+
+  // Favourites page
+  .favourites-page {
+    .user-content {
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(46);
+      }
+      .page-title {
+        margin-bottom: rem-calc(29);
+      }
+    }
+  }
+  .favourites {
+    padding-bottom: rem-calc(63);
+  }
+  .favourites-info {
+    padding-bottom: rem-calc(45);
+  }
+  .favourites-items {
+    max-width: none;
   }
 }
 
