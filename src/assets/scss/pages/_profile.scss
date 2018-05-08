@@ -1,0 +1,122 @@
+.profile {
+  position: relative;
+  padding-top: rem-calc(60);
+  .person-items {
+    margin-bottom: 0;
+  }
+}
+
+.user-status-wrapper {
+  margin: 0 auto;
+  max-width: rem-calc(400);
+}
+
+.user-status {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem-calc(10);
+  padding: rem-calc(10 10 15);
+  background-color: #fbfbfb;
+  border: 1px solid #efefef;
+}
+
+.user-status-picture {
+  padding-right: rem-calc(10);
+}
+
+.user-status-info {
+  font-size: rem-calc(15);
+}
+
+.user-status-title {
+  margin-bottom: 0;
+  line-height: 2;
+  font-weight: 300;
+  color: $body-font-color;
+}
+
+.user-birth-fields {
+  select {
+    padding-left: rem-calc(8);
+  }
+}
+
+.newsletter-signup-item {
+  .checkbox {
+    & + label {
+      padding-top: rem-calc(4);
+      padding-bottom: rem-calc(4);
+    }
+  }
+}
+
+.profile-userpic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: rem-calc(10);
+  width: rem-calc(130);
+  height: rem-calc(130);
+  background-color: #f2f2f2;
+}
+
+.profile-upload {
+  padding-bottom: rem-calc(20);
+}
+
+.profile-documents {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  li {
+    flex: 1 0 auto;
+    margin-bottom: rem-calc(10);
+    &:not(:last-child) {
+      margin-right: rem-calc(20);
+    }
+  }
+}
+
+.profile-document-picture {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  a {
+    border: 0;
+  }
+  .close-button {
+    overflow: hidden;
+    top: 0;
+    width: rem-calc(20);
+    height: rem-calc(20);
+    border-radius: 0;
+    font-size: rem-calc(24);
+    line-height: 20px;
+    font-weight: 600;
+    background-color: #d9d9d9;
+  }
+}
+
+.profile-document-title {
+  line-height: 1;
+  a {
+    border-bottom: 1px solid $body-font-color;
+    color: $body-font-color;
+  }
+}
+
+.profile-notice {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: rem-calc(12 10 13);
+  width: 100%;
+  max-width: rem-calc(260);
+  transform: translateX(-50%);
+  color: $dark-gray;
+  background-color: $medium-gray;
+  &.success {
+    color: #588122;
+    background-color: #e7ffc7;
+  }
+}

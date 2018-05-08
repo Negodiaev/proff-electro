@@ -57,3 +57,23 @@
   line-height: 1;
   transition: border-color 0.15s ease;
 }
+
+.upload-button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  padding: 0;
+  width: auto;
+  border-bottom: 1px solid $secondary-color;
+  font-size: rem-calc(16);
+  line-height: 1;
+  color: $secondary-color;
+  background-color: transparent;
+  transition: border-color 0.15s ease;
+  &:hover,
+  &:focus {
+    border-color: transparent;
+    color: $secondary-color;
+    background-color: transparent;
+  }
+}

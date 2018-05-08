@@ -15,4 +15,6 @@
 * [User](https://negodiaev.github.io/proff-electro/user.html)
 * [Login](https://negodiaev.github.io/proff-electro/login.html)
 * [Register](https://negodiaev.github.io/proff-electro/register.html)
+* [Newsletter](https://negodiaev.github.io/proff-electro/newsletter.html)
+* [Profile](https://negodiaev.github.io/proff-electro/profile.html)
 * [404](https://negodiaev.github.io/proff-electro/404.html)

@@ -179,6 +179,13 @@
       padding-top: 0;
     }
   }
+
+  // Profile page
+  .user-birth-fields {
+    .select {
+      margin-bottom: rem-calc(10);
+    }
+  }
 }
 
 @include breakpoint(medium) {
@@ -590,6 +597,15 @@
   .user-link-picture {
     height: rem-calc(100);
   }
+  .person-item-upload {
+    align-items: flex-start;
+    & > label {
+      flex-shrink: 0;
+    }
+  }
+  .profile-upload {
+    flex-grow: 1;
+  }
 
   // Login page
   .login-content {
@@ -627,6 +643,40 @@
   }
   .user-checkbox-item {
     padding-left: rem-calc(150);
+  }
+
+  // Profile page
+  .profile {
+    .person-item-upload {
+      padding-right: 0;
+    }
+  }
+  .user-status-wrapper {
+    padding-left: rem-calc(20);
+    max-width: rem-calc(420);
+  }
+  .user-status-info {
+    font-size: rem-calc(22);
+  }
+  .user-birth-fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    max-width: rem-calc(400);
+    .select {
+      flex: 1 1 auto;
+      &:not(:last-child) {
+        margin-right: rem-calc(5);
+      }
+    }
+  }
+  .profile-userpic {
+    margin-top: rem-calc(15);
+  }
+  .profile-notice {
+    max-width: rem-calc(400);
+    margin-left: rem-calc(10);
   }
 }
 
@@ -1631,6 +1681,54 @@
       margin-bottom: rem-calc(36);
     }
   }
+
+  // Profile page
+  .profile-page {
+    .user-content {
+      padding-bottom: rem-calc(84);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(10);
+      }
+      .page-title {
+        margin-bottom: rem-calc(27);
+      }
+    }
+    .user-checkbox-item {
+      margin-bottom: rem-calc(21);
+    }
+  }
+  .profile {
+    padding-top: rem-calc(66);
+    padding-bottom: rem-calc(55);
+    .person-item {
+      &:not(:last-child) {
+        &.person-item-upload {
+          margin-bottom: rem-calc(23);
+        }
+      }
+    }
+    hr {
+      margin: rem-calc(43 -70 60);
+    }
+  }
+  .user-status {
+    margin-bottom: rem-calc(25);
+    padding-top: rem-calc(25);
+    padding-bottom: rem-calc(31);
+  }
+  .user-status-picture {
+    padding-left: rem-calc(22);
+    padding-right: rem-calc(32);
+  }
+  .user-birth-fields {
+    .select {
+      flex-basis: 130px;
+    }
+  }
+  .profile-documents {
+    padding-top: rem-calc(5);
+    padding-bottom: rem-calc(23);
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -1736,6 +1834,21 @@
       .swiper-pagination {
         bottom: 0;
       }
+    }
+  }
+
+  // Profile page
+  .profile {
+    hr {
+      margin-left: rem-calc(-170);
+      margin-right: rem-calc(-170);
+    }
+  }
+  .profile-documents {
+    margin-right: rem-calc(-170);
+    justify-content: space-between;
+    li {
+      flex-grow: 0;
     }
   }
 }
