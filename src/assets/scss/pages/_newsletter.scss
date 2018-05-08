@@ -1,0 +1,25 @@
+.newsletter {
+  padding-top: rem-calc(20);
+  p {
+    margin-bottom: rem-calc(15);
+  }
+  .page-title {
+    margin-bottom: rem-calc(20);
+  }
+  .register-button {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+.newsletter-title-block {
+  .icon {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.cancel-newsletter {
+  a {
+    font-size: rem-calc(17);
+    line-height: unitless-calc(19, 17);
+  }
+}

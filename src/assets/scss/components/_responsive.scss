@@ -11,6 +11,15 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  // Newsletter page
+  .newsletter-page {
+    .user-content {
+      .page-title {
+        font-size: rem-calc(24);
+      }
+    }
+  }
 }
 
 @include breakpoint(medium only) {
@@ -616,7 +625,7 @@
       }
     }
   }
-  .license-agreement {
+  .user-checkbox-item {
     padding-left: rem-calc(150);
   }
 }
@@ -1578,8 +1587,49 @@
       }
     }
   }
-  .license-agreement {
+  .user-checkbox-item {
     margin-bottom: rem-calc(40);
+  }
+
+  // Newsletter page
+  .newsletter-page {
+    .user-content {
+      padding-bottom: rem-calc(53);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(10);
+      }
+      .page-title {
+        margin-bottom: rem-calc(58);
+      }
+    }
+  }
+  .newsletter {
+    padding-top: rem-calc(58);
+    padding-bottom: rem-calc(42);
+    p {
+      margin: rem-calc(0 -50 30);
+    }
+    .register-content {
+      .person-item {
+        &:not(:last-child) {
+          margin-bottom: rem-calc(6);
+        }
+      }
+    }
+    .user-checkbox-item {
+      margin-bottom: rem-calc(29);
+      &.license-agreement {
+        margin-bottom: rem-calc(35);
+      }
+    }
+    .register-button {
+      margin-bottom: rem-calc(28);
+    }
+  }
+  .newsletter-title-block {
+    .icon {
+      margin-bottom: rem-calc(36);
+    }
   }
 }
 

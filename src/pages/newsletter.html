@@ -1,0 +1,85 @@
+<div class="newsletter-page user-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="user-content content section-light-gray">
+          <div class="breadcrumbs-wrapper">
+            <div class="column row">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Главная страница</a>
+                  </li>
+                  <li>
+                    <a href="#">Категория</a>
+                  </li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Активная категория</li>
+                </ul>
+              </nav>
+              <!-- /.breadcrumbs -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.breadcrumbs-wrapper -->
+          <div class="column row">
+            <div class="newsletter user-card checkout-card content-card">
+              <div class="newsletter-title-block text-center">
+                <svg class="icon" width="67" height="43">
+                  <use xlink:href="#envelope"></use>
+                </svg>
+                <h1 class="user-card-title checkout-card-title page-title title">Подписка на рассылку</h1>
+              </div>
+              <div class="register-content login-content">
+                <form>
+                  <div class="person-items">
+                    <div class="person-item">
+                      <label for="person-mail" class="medium-text-right middle">Email:</label>
+                      <input type="text" id="person-mail">
+                    </div>
+                    <div class="user-checkbox-item">
+                      <div>
+                        <input type="checkbox" name="newsletter-topic" id="newsletter-topic-1" class="checkbox">
+                        <label for="newsletter-topic-1">Рубрика 1</label>
+                      </div>
+                      <div>
+                        <input type="checkbox" name="newsletter-topic" id="newsletter-topic-3" class="checkbox" checked>
+                        <label for="newsletter-topic-3">Рубрика 3</label>
+                      </div>
+                    </div>
+                  </div>
+                  <p>В лингвистике термин текст используется в широком значении, включая и образцы устной речи. Восприятие текста
+                    изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет текст
+                    следующим образом: «это письменное сообщение, объективированное в виде письменного документа, состоящее
+                    из ряда высказываний,</p>
+                  <div class="license-agreement user-checkbox-item">
+                    <input type="checkbox" name="license-agreement" id="license-agreement-checkbox" class="checkbox">
+                    <label for="license-agreement-checkbox">Я принимаю пользовательское соглашение</label>
+                  </div>
+                  <button class="register-button login-button checkout-button button button-primary large">Подписаться</button>
+                  <div class="cancel-newsletter text-center">
+                    <a href="#">Отменить все подписки</a>
+                  </div>
+                </form>
+              </div>
+              <!-- /.register-content -->
+            </div>
+            <!-- /.register -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->
