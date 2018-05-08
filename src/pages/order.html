@@ -1,0 +1,83 @@
+<div class="order-page user-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="user-content content section-light-gray">
+          <div class="breadcrumbs-wrapper">
+            <div class="column row">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Главная страница</a>
+                  </li>
+                  <li>
+                    <a href="#">Категория</a>
+                  </li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Активная категория</li>
+                </ul>
+              </nav>
+              <!-- /.breadcrumbs -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.breadcrumbs-wrapper -->
+          <div class="row">
+            <div class="medium-10 medium-centered large-8 columns">
+              <div class="order user-card checkout-card content-card text-center">
+                <svg class="icon" width="99" height="92">
+                  <use xlink:href="#check-mark"></use>
+                </svg>
+                <h1 class="user-card-title checkout-card-title page-title title">Заказ №12312
+                  <br>успешно оформлен</h1>
+                <div class="login-content">
+                  <div class="order-info">
+                    <p>В лингвистике термин текст используется в широком значении, включая и образцы устной речи. Восприятие
+                      текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет
+                      текст следующим образом: «это письменное сообщение,</p>
+                  </div>
+                  <a href="#">Скачать счет</a>
+                  <button class="login-button checkout-button button button-primary large">Перейти к оплате</button>
+                  <p class="order-message">Вы будете перенаправлены
+                    <br>на страницу оплаты через 5 секунд</p>
+                </div>
+                <!-- /.login-content -->
+              </div>
+              <!-- /.order -->
+              <div class="order user-card checkout-card content-card text-center">
+                <svg class="icon" width="99" height="92">
+                  <use xlink:href="#checkout-error"></use>
+                </svg>
+                <div class="user-card-title checkout-card-title page-title title h1">Ошибка оплаты заказа</div>
+                <div class="login-content">
+                  <div class="order-info">
+                    <p>В лингвистике термин текст используется в широком значении, включая и образцы устной речи. Восприятие
+                      текста изучается в рамках лингвистики текста и психолингвистики. Так, например, И. Р. Гальперин определяет
+                      текст следующим образом: «это письменное сообщение,</p>
+                  </div>
+                  <a href="#">История заказов</a>
+                  <button class="login-button checkout-button button button-primary large">Повторить оплату</button>
+                </div>
+                <!-- /.login-content -->
+              </div>
+              <!-- /.order -->
+            </div>
+            <!-- /.columns -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->

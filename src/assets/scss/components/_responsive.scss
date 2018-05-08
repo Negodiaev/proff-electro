@@ -1761,6 +1761,40 @@
   .favourites-items {
     max-width: none;
   }
+
+  // Order page
+  .order-page {
+    .user-content {
+      padding-bottom: rem-calc(93);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(10);
+      }
+      .checkout-card {
+        &:not(:last-child) {
+          margin-bottom: rem-calc(76);
+        }
+      }
+      .page-title {
+        margin-bottom: rem-calc(34);
+      }
+    }
+  }
+  .order {
+    padding-top: rem-calc(76);
+    padding-bottom: rem-calc(30);
+    a {
+      margin-bottom: rem-calc(32);
+    }
+    .icon {
+      margin-bottom: rem-calc(30);
+    }
+    .login-button {
+      margin-bottom: rem-calc(25);
+    }
+  }
+  .order-info {
+    padding-bottom: rem-calc(16);
+  }
 }
 
 @include breakpoint(xlarge) {

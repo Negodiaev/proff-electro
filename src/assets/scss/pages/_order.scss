@@ -1,0 +1,32 @@
+.order {
+  padding-top: rem-calc(30);
+  p {
+    margin-bottom: rem-calc(15);
+  }
+  a {
+    margin-bottom: rem-calc(20);
+    font-size: rem-calc(17);
+    line-height: unitless-calc(19, 17);
+    font-weight: 600;
+  }
+  .icon {
+    margin-bottom: rem-calc(15);
+  }
+  .user-card-title {
+    font-weight: $global-weight-bold;
+    line-height: unitless-calc(45, 35);
+  }
+  .login-button {
+    margin-bottom: rem-calc(15);
+  }
+}
+
+.order-info {
+  padding: rem-calc(0 10);
+  text-align: left;
+}
+
+.order-message {
+  margin: 0 auto;
+  max-width: rem-calc(300);
+}
