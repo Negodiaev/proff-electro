@@ -77,3 +77,25 @@
     background-color: transparent;
   }
 }
+
+.user-table {
+  text-align: left;
+  font-size: rem-calc(15);
+  line-height: unitless-calc(22, 15);
+  tr {
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  th,
+  td {
+    padding-top: rem-calc(6);
+    padding-bottom: rem-calc(6);
+    &:not(:last-child) {
+      padding-right: rem-calc(10);
+    }
+  }
+  th {
+    font-weight: 600;
+  }
+}

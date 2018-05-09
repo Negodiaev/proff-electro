@@ -1,0 +1,33 @@
+.discount-items {
+  margin-bottom: 0;
+  .column-block {
+    margin-bottom: rem-calc(10);
+  }
+}
+
+.discount-item {
+  padding: rem-calc(15 10 19);
+  p {
+    margin: 0 auto;
+    max-width: rem-calc(240);
+    line-height: unitless-calc(19, 16);
+  }
+}
+
+.discount-item-inner {
+  display: inline-flex;
+  align-items: center;
+}
+
+.discount-item-picture {
+  padding: rem-calc(0 20 0 10);
+}
+
+.discount-item-title {
+  margin-bottom: rem-calc(9);
+  color: $body-font-color;
+}
+
+.bonuses-table {
+  margin-bottom: 0;
+}

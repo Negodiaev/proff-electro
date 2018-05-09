@@ -48,6 +48,16 @@
       margin-right: rem-calc(30);
     }
   }
+
+  // Discount page
+  .bonuses-table {
+    th,
+    td {
+      &:nth-child(5) {
+        display: none;
+      }
+    }
+  }
 }
 
 @include breakpoint(small only) {
@@ -606,6 +616,13 @@
   .profile-upload {
     flex-grow: 1;
   }
+  .user-table {
+    th,
+    td {
+      padding-top: rem-calc(14);
+      padding-bottom: rem-calc(15);
+    }
+  }
 
   // Login page
   .login-content {
@@ -688,6 +705,36 @@
   }
   .favourites-items {
     max-width: rem-calc(900);
+  }
+
+  // Discount page
+  .discount-items {
+    .column-block {
+      margin-bottom: rem-calc(20);
+    }
+  }
+  .discount-item-picture {
+    padding-top: rem-calc(6);
+  }
+  .bonuses-table {
+    th,
+    td {
+      &:first-child {
+        width: rem-calc(70);
+      }
+      &:nth-child(2) {
+        width: rem-calc(140);
+      }
+      &:nth-child(4) {
+        width: rem-calc(90);
+      }
+      &:nth-child(5) {
+        width: rem-calc(100);
+      }
+      &:last-child {
+        width: rem-calc(115);
+      }
+    }
   }
 }
 
@@ -1795,6 +1842,54 @@
   .order-info {
     padding-bottom: rem-calc(16);
   }
+
+  // Discount page
+  .discount-page {
+    .user-content {
+      padding-bottom: rem-calc(75);
+      .breadcrumbs-wrapper {
+        margin-bottom: rem-calc(16);
+      }
+      .page-title {
+        margin-bottom: rem-calc(74);
+      }
+    }
+  }
+  .discount-items {
+    padding-bottom: rem-calc(44);
+  }
+  .discount-item {
+    padding-top: rem-calc(24);
+  }
+  .discount-item-inner {
+    display: flex;
+  }
+  .bonuses {
+    padding: rem-calc(51 20 9);
+  }
+  .bonuses-table {
+    th,
+    td {
+      &:first-child {
+        width: rem-calc(80);
+      }
+      &:nth-child(2) {
+        width: rem-calc(150);
+      }
+      &:nth-child(4) {
+        width: rem-calc(100);
+      }
+      &:nth-child(5) {
+        width: rem-calc(110);
+      }
+      &:last-child {
+        width: rem-calc(115);
+      }
+      &:not(:last-child) {
+        padding-right: rem-calc(20);
+      }
+    }
+  }
 }
 
 @include breakpoint(xlarge) {
@@ -1915,6 +2010,35 @@
     justify-content: space-between;
     li {
       flex-grow: 0;
+    }
+  }
+
+  // Discount page
+  .discount-item-picture {
+    padding-left: rem-calc(23);
+    padding-right: rem-calc(26);
+  }
+  .bonuses-table {
+    th,
+    td {
+      &:first-child {
+        width: rem-calc(107);
+      }
+      &:nth-child(2) {
+        width: rem-calc(183);
+      }
+      &:nth-child(4) {
+        width: rem-calc(129);
+      }
+      &:nth-child(5) {
+        width: rem-calc(131);
+      }
+      &:last-child {
+        width: rem-calc(140);
+      }
+      &:not(:last-child) {
+        padding-right: rem-calc(20);
+      }
     }
   }
 }
