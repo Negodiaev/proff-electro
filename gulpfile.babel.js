@@ -210,7 +210,7 @@ function javascript() {
 // In production, the images are compressed
 function images() {
   return gulp
-    .src('src/assets/img/**/*.+(png|jpg|jpeg|gif|ico)')
+    .src('src/assets/img/**/*.+(png|jpg|jpeg|svg|gif|ico)')
     .pipe(
       $.if(
         PRODUCTION,
@@ -244,7 +244,9 @@ function watch() {
   gulp.watch('src/{layouts,partials}/**/*.html').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*.+(png|jpg|jpeg|gif|ico)').on('all', gulp.series(images, browser.reload));
+  gulp
+    .watch('src/assets/img/**/*.+(png|jpg|jpeg|svg|gif|ico)')
+    .on('all', gulp.series(images, browser.reload));
   gulp.watch('src/assets/img/svg/*.svg').on('all', gulp.series(createSprite, browser.reload));
   // gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }

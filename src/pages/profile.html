@@ -182,20 +182,22 @@
                             <use xlink:href="#userpic"></use>
                           </svg>
                         </div>
-                        <button type="file" class="upload-button button">Загрузить фото</button>
+                        <div class="upload-button-wrapper">
+                          <button type="file" class="upload-button button">Загрузить фото</button>
+                        </div>
                       </div>
                     </div>
                     <div class="person-item-upload person-item">
                       <label for="person-company" class="medium-text-right middle">Документы:</label>
                       <div class="profile-upload">
                         <ul class="profile-documents">
-                          <li>
+                          <li data-closable>
                             <div class="profile-document">
                               <div class="profile-document-picture">
                                 <a href="#">
                                   <img src="assets/img/user-documents/1.jpg" alt="">
                                 </a>
-                                <button type="button" aria-label="Удалить" class="close-button">
+                                <button type="button" aria-label="Удалить" class="close-button" data-close>
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
@@ -204,13 +206,13 @@
                               </div>
                             </div>
                           </li>
-                          <li>
+                          <li data-closable>
                             <div class="profile-document">
                               <div class="profile-document-picture">
                                 <a href="">
                                   <img src="assets/img/user-documents/1.jpg" alt="">
                                 </a>
-                                <button type="button" aria-label="Удалить" class="close-button">
+                                <button type="button" aria-label="Удалить" class="close-button" data-close>
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
@@ -219,13 +221,13 @@
                               </div>
                             </div>
                           </li>
-                          <li>
+                          <li data-closable>
                             <div class="profile-document">
                               <div class="profile-document-picture">
                                 <a href="">
                                   <img src="assets/img/user-documents/1.jpg" alt="">
                                 </a>
-                                <button type="button" aria-label="Удалить" class="close-button">
+                                <button type="button" aria-label="Удалить" class="close-button" data-close>
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
@@ -234,13 +236,13 @@
                               </div>
                             </div>
                           </li>
-                          <li>
+                          <li data-closable>
                             <div class="profile-document">
                               <div class="profile-document-picture">
                                 <a href="">
                                   <img src="assets/img/user-documents/1.jpg" alt="">
                                 </a>
-                                <button type="button" aria-label="Удалить" class="close-button">
+                                <button type="button" aria-label="Удалить" class="close-button" data-close>
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                               </div>
@@ -250,7 +252,9 @@
                             </div>
                           </li>
                         </ul>
-                        <button type="file" class="upload-button button">Прикрепить документ</button>
+                        <div class="upload-button-wrapper">
+                          <button type="file" class="upload-button button">Прикрепить документ</button>
+                        </div>
                       </div>
                     </div>
                     <hr>

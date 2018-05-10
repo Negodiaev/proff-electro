@@ -1,3 +1,21 @@
+input {
+  &[type='date'] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-clear-button {
+      -webkit-appearance: none;
+      display: none;
+    }
+    &::-webkit-calendar-picker-indicator {
+      width: 23px;
+      height: 26px;
+      opacity: 1;
+      cursor: pointer;
+      color: transparent;
+      background: transparent url(../../assets/img/icons/calendar.svg) no-repeat center / auto;
+    }
+  }
+}
+
 .select {
   position: relative;
   margin-bottom: 1rem;

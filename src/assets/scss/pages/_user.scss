@@ -58,6 +58,11 @@
   transition: border-color 0.15s ease;
 }
 
+.upload-button-wrapper {
+  padding: rem-calc(10 0);
+  line-height: 1;
+}
+
 .upload-button {
   display: inline-block;
   vertical-align: middle;

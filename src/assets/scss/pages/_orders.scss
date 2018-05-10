@@ -1,0 +1,244 @@
+.orders {
+  margin-bottom: rem-calc(10);
+  padding-top: rem-calc(15);
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.orders-sorting {
+  padding: rem-calc(0 10 30);
+}
+
+.orders-sorting-item {
+  display: inline-block;
+  label,
+  .select,
+  input {
+    display: inline-block;
+  }
+  label {
+    margin-right: rem-calc(6);
+    margin-bottom: 0;
+    font-size: rem-calc(15);
+  }
+  .select {
+    margin-bottom: rem-calc(15);
+    min-width: rem-calc(208);
+  }
+  select,
+  input {
+    height: rem-calc(40);
+    border-color: #bbb;
+    font-size: rem-calc(14);
+    font-weight: 600;
+  }
+  select {
+    padding-left: rem-calc(8);
+  }
+}
+
+.date-field {
+  display: inline-block;
+  vertical-align: middle;
+  input {
+    margin-bottom: rem-calc(5);
+    padding: rem-calc(10 5);
+  }
+}
+
+.table-expand {
+  margin-bottom: rem-calc(10);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(20, 15);
+  .table-item {
+    cursor: pointer;
+    user-select: none;
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+    &:nth-child(4n + 1) {
+      background-color: #fbffff;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid #ddd;
+    }
+    &:nth-last-child(2) {
+      border-bottom: 0;
+    }
+    &.is-active,
+    &:hover {
+      border-color: transparent;
+      background-color: #d7f0f2;
+    }
+    &.is-active {
+      .table-item-toggle {
+        transform: rotate(180deg);
+      }
+    }
+    th,
+    td {
+      padding: rem-calc(6 10);
+      &:first-child {
+        font-weight: 600;
+      }
+    }
+  }
+  .table-item-content {
+    display: none;
+    &.is-active {
+      display: table-row;
+      animation: tableItemFadeIn ease 1;
+      animation-fill-mode: both;
+      animation-duration: 0.3s;
+    }
+    th,
+    td {
+      padding: 0;
+    }
+  }
+  .table-item-toggle {
+    transition: transform 0.3s ease;
+  }
+}
+
+@keyframes tableItemFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.orders-table {
+  .cart-items {
+    & > li {
+      &:first-child {
+        border-top: 0;
+      }
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  .cart-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: rem-calc(10 0);
+    line-height: 1.25;
+    a {
+      margin-bottom: 0;
+      border: 0;
+    }
+  }
+  .product-card-picture {
+    margin: 0 auto;
+    padding: rem-calc(10);
+    max-width: rem-calc(180);
+  }
+  .product-card-title {
+    a {
+      line-height: unitless-calc(21, 16);
+      color: #267e85;
+      &:hover,
+      &:focus {
+        color: $secondary-color;
+        .text-info {
+          border-color: transparent;
+        }
+      }
+    }
+    .text-info {
+      border-bottom: 1px solid #267e85;
+      transition: border-color 0.15s ease;
+    }
+  }
+  .cart-item-price,
+  .cart-item-amount {
+    font-size: rem-calc(15);
+  }
+  .cart-item-amount {
+    margin-bottom: 0;
+    font-weight: $global-weight-normal;
+    .cart-item-sum {
+      margin-right: 0;
+    }
+  }
+}
+
+.orders-table-controls {
+  position: relative;
+  padding-right: rem-calc(15);
+  .close-button {
+    right: rem-calc(-5);
+    padding: rem-calc(5);
+    font-size: rem-calc(28);
+    line-height: 14px;
+    color: #b6c6c7;
+    transform: translateY(-50%);
+    &:hover,
+    &:focus {
+      color: $dark-gray;
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.orders-table-repeat {
+  margin: rem-calc(0 15);
+  color: $anchor-color;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.orders-item-details {
+  padding: rem-calc(0 10 20);
+}
+
+.orders-item-cost {
+  margin-bottom: rem-calc(6);
+  font-weight: $global-weight-bold;
+  .text-up {
+    text-transform: uppercase;
+  }
+}
+
+.orders-card {
+  padding: rem-calc(10 0);
+  font-size: rem-calc(15);
+  line-height: unitless-calc(20);
+  &:not(:last-child) {
+    margin-bottom: rem-calc(10);
+  }
+  &.one-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    .orders-col-title {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+  .login-button {
+    width: rem-calc(220);
+  }
+}
+
+.orders-col {
+  padding: rem-calc(0 10);
+}
+
+.orders-col-title {
+  font-weight: $global-weight-normal;
+  &.title-number {
+    white-space: nowrap;
+  }
+}
+
+.orders-card-title {
+  font-weight: 600;
+}

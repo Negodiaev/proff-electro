@@ -211,23 +211,35 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //------------------------------------------------------------------------//
 
   //------------------------------------------------------------------------//
-  //Product gallery
-  var productGallery = new Swiper('#product-gallery', {
-    spaceBetween: 10,
-    navigation: {
-      nextEl: '#product-gallery-next',
-      prevEl: '#product-gallery-prev'
-    }
+  //Expand table
+  var expandTables = document.querySelectorAll('.table-expand');
+
+  Array.prototype.forEach.call(expandTables, function(expandTable) {
+    var tableItems = expandTable.querySelectorAll('.table-item');
+
+    Array.prototype.forEach.call(tableItems, function(tableItem) {
+      tableItem.addEventListener('click', function(event) {
+        var target = event.target,
+          tableItemContent = this.nextElementSibling;
+
+        while (target) {
+          if (target.classList.contains('close-button') || target.classList.contains('repeat-button')) {
+            if (target.classList.contains('close-button')) {
+              tableItemContent.style = 'display: none;';
+            }
+            return false;
+          } else {
+            target = target.parentElement;
+          }
+        }
+
+        this.classList.toggle('is-active');
+        tableItemContent.classList.toggle('is-active');
+
+        event.preventDefault();
+      });
+    });
   });
-  var galleryThumbs = new Swiper('#product-gallery-thumbs', {
-    spaceBetween: 19,
-    centeredSlides: true,
-    slidesPerView: 'auto',
-    touchRatio: 0.2,
-    slideToClickedSlide: true
-  });
-  productGallery.controller.control = galleryThumbs;
-  galleryThumbs.controller.control = productGallery;
   //------------------------------------------------------------------------//
 
   //------------------------------------------------------------------------//
@@ -245,5 +257,25 @@ document.addEventListener('DOMContentLoaded', function(event) {
   //     }
   //   });
   // });
+  //------------------------------------------------------------------------//
+
+  //------------------------------------------------------------------------//
+  //Product gallery
+  var productGallery = new Swiper('#product-gallery', {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: '#product-gallery-next',
+      prevEl: '#product-gallery-prev'
+    }
+  });
+  var galleryThumbs = new Swiper('#product-gallery-thumbs', {
+    spaceBetween: 19,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    touchRatio: 0.2,
+    slideToClickedSlide: true
+  });
+  productGallery.controller.control = galleryThumbs;
+  galleryThumbs.controller.control = productGallery;
   //------------------------------------------------------------------------//
 });

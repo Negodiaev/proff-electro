@@ -1,0 +1,880 @@
+<div class="orders-page user-page page off-canvas-wrapper">
+  <div class="side-content off-canvas position-left text-center" id="offCanvas" data-off-canvas>
+    {{> mobile}}
+  </div>
+  <!-- /.off-canvas -->
+  <div class="off-canvas-content" data-off-canvas-content>
+    <div class="sticky-footer">
+      {{> header}}
+      <main class="main">
+        <div class="user-content content section-light-gray">
+          <div class="breadcrumbs-wrapper">
+            <div class="column row">
+              <nav aria-label="You are here:" role="navigation">
+                <ul class="breadcrumbs">
+                  <li>
+                    <a href="#">Главная страница</a>
+                  </li>
+                  <li>
+                    <a href="#">Категория</a>
+                  </li>
+                  <li>
+                    <span class="show-for-sr">Current: </span> Активная категория</li>
+                </ul>
+              </nav>
+              <!-- /.breadcrumbs -->
+            </div>
+            <!-- /.row -->
+          </div>
+          <!-- /.breadcrumbs-wrapper -->
+          <div class="column row">
+            <h1 class="page-title title text-center">Заказы</h1>
+            <div class="orders user-card checkout-card content-card">
+              <div class="orders-content">
+                <div class="orders-sorting">
+                  <div class="orders-status orders-sorting-item">
+                    <label for="orders-status-select" class="middle">Показать заказы статус которых:</label>
+                    <div class="select">
+                      <select id="orders-status-select">
+                        <option value="1">Исполнен</option>
+                        <option value="2">Статус 2</option>
+                        <option value="3">Статус 3</option>
+                        <option value="3">Статус 4</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="orders-period orders-sorting-item">
+                    <div class="date-field">
+                      <label for="orders-period-from" class="middle">Дата с</label>
+                      <input type="date" name="orders-period-from" id="orders-period-from" value="2018-04-01">
+                    </div>
+                    <div class="date-field">
+                      <label for="orders-period-till" class="middle">до</label>
+                      <input type="date" name="orders-period-till" id="orders-period-till" value="2018-04-27">
+                    </div>
+                  </div>
+                </div>
+                <!-- /.orders-sorting -->
+                <table class="orders-table table-expand stack">
+                  <tr class="table-item" data-closable>
+                    <td>№ 123</td>
+                    <td>27.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Оплачен</td>
+                    <td>190 999 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 24</td>
+                    <td>09.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Оплачен</td>
+                    <td>2 020 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 78</td>
+                    <td>05.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Неоплачен</td>
+                    <td>7 399 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 54</td>
+                    <td>01.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Статус оплат</td>
+                    <td>190 999 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 123</td>
+                    <td>27.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Оплачен</td>
+                    <td>190 999 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 243</td>
+                    <td>09.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Оплачен</td>
+                    <td>2 020 Руб.</td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item" data-closable>
+                    <td>№ 78</td>
+                    <td>05.04.2018</td>
+                    <td>Исполнен</td>
+                    <td>Неоплачен</td>
+                    <td>7 399 Руб. </td>
+                    <td>
+                      <div class="orders-table-controls">
+                        <svg class="table-item-toggle icon" width="16" height="9">
+                          <use xlink:href="#angle-down"></use>
+                        </svg>
+                        <button type="button" class="orders-table-repeat repeat-button top" data-tooltip tabindex="1" data-template="<div class='product-tooltip text-center'><div class='product-tooltip-content'><h6 class='product-tooltip-title title'>Повторить</h6></div></div>"
+                          data-fade-in-duration="0" data-fade-out-duration="0">
+                          <svg class="icon" width="14" height="17">
+                            <use xlink:href="#repeat"></use>
+                          </svg>
+                        </button>
+                        <button type="button" class="close-button" aria-label="Удалить Заказ" data-close>
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="table-item-content">
+                    <td colspan="8">
+                      <ul class="cart-items">
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                        <li>
+                          <div class="cart-item">
+                            <div class="picture-column cart-item-column">
+                              <div class="product-card-picture text-center">
+                                <a href="#">
+                                  <img src="assets/img/goods/5.jpg" alt="">
+                                </a>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="info-column cart-item-column">
+                              <h6 class="product-card-title title">
+                                <a href="#">
+                                  <span class="text-info">Наименование товара существуют две основные трактовки понятия «текст»: «имманентная» (более
+                                    частная).
+                                  </span>
+                                </a>
+                              </h6>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="price-column cart-item-column">
+                              <div class="cart-item-price">1 500 руб.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="quantity-column cart-item-column">
+                              <div class="cart-item-quantity">5 шт.</div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                            <div class="amount-column cart-item-column">
+                              <div class="cart-item-amount">
+                                <span class="cart-item-sum">7 500 руб.</span>
+                              </div>
+                            </div>
+                            <!-- /.cart-item-column -->
+                          </div>
+                          <!-- /.cart-item -->
+                        </li>
+                      </ul>
+                      <!-- /.cart-items -->
+                      <div class="orders-item-details">
+                        <div class="orders-item-cost">
+                          <span class="text-up">Итого:</span> 15 000 Руб.</div>
+                        <div class="orders-item-address">Адрес доставки: г. Москва, ул. Коммунистическая, 75</div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+                <!-- /.orders-table -->
+              </div>
+              <!-- /.orders-content -->
+            </div>
+            <!-- /.orders -->
+            <div class="orders-card content-card">
+              <div class="orders-col">
+                <h4 class="orders-card-title orders-col-title">Сушенцев Семен Сергеевич</h4>
+                <div>ФИО</div>
+              </div>
+              <div class="orders-col">
+                <h4 class="orders-col-title title-number">8 (965) 57 65 115</h4>
+                <div>Телефон</div>
+              </div>
+              <div class="orders-col">
+                <h4 class="orders-col-title title-number">53466747683</h4>
+                <div>ИНН</div>
+              </div>
+            </div>
+            <!-- /.orders-card -->
+            <div class="orders-card one-line content-card">
+              <div class="orders-col">
+                <h4 class="orders-card-title orders-col-title">Заказ неоплачен
+                </h4>
+              </div>
+              <div class="orders-col">
+                <button class="login-button checkout-button button button-primary large">Перейти к оплате</button>
+              </div>
+            </div>
+            <!-- /.orders-card -->
+            <div class="orders-card content-card">
+              <div class="orders-col">
+                <h4 class="orders-card-title orders-col-title">Курьерская</h4>
+                <div>Доставка</div>
+              </div>
+              <div class="orders-col">
+                <h4 class="orders-col-title title-number">05.04.2018</h4>
+                <div>Дата доставки</div>
+              </div>
+              <div class="orders-col">
+                <h4 class="orders-col-title title-number">150 Руб.</h4>
+                <div>Стоимость доставки</div>
+              </div>
+            </div>
+            <!-- /.orders-card -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.content -->
+      </main>
+      <!-- /.main -->
+      {{> footer}}
+    </div>
+    <!-- /.sticky-footer -->
+  </div>
+  <!-- /.off-canvas-content -->
+</div>
+<!-- /.off-canvas-wrapper -->
