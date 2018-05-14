@@ -89,6 +89,8 @@
 }
 
 .mega-menu-container {
+  position: relative;
+  z-index: 1010;
   a {
     display: flex;
     justify-content: space-between;
@@ -99,6 +101,7 @@
     min-width: rem-calc(16);
   }
   .mega-menu-toggle {
+    display: block;
     &.is-active {
       & > a {
         background-color: $primary-color;
@@ -123,7 +126,8 @@
   & > a {
     width: 100%;
     background-color: $primary-color;
-    &:hover {
+    &:hover,
+    &:focus {
       color: get-color(text);
     }
   }
@@ -134,10 +138,9 @@
     width: 100%;
   }
   li {
+    display: block;
     flex: 1 0 100%;
-    &:hover {
-      color: red;
-    }
+    background-color: $white;
   }
   a {
     flex-grow: 1;
@@ -192,5 +195,24 @@
 .more-menu {
   ul {
     margin-left: 0;
+  }
+}
+
+// No JS
+.no-js {
+  .mega-menu-container {
+    &:before {
+      display: none;
+    }
+    ul {
+      position: absolute;
+    }
+    li {
+      &:hover {
+        & > ul {
+          display: block;
+        }
+      }
+    }
   }
 }

@@ -70,6 +70,15 @@
       }
     }
   }
+
+  // No JS
+  .no-js {
+    .mega-menu-container {
+      .mega-menu {
+        min-width: rem-calc(237);
+      }
+    }
+  }
 }
 
 @include breakpoint(small only) {
@@ -860,6 +869,19 @@
     }
     &:not(:first-child) {
       flex: 0 0 rem-calc(190);
+    }
+  }
+
+  // No JS
+  .no-js {
+    .mega-menu-container {
+      ul {
+        border: 1px solid $medium-gray;
+        border-left: 0;
+      }
+      .mega-menu {
+        border-left: 1px solid $medium-gray;
+      }
     }
   }
 }
@@ -2139,6 +2161,18 @@
   }
   .orders-card-title {
     margin-top: rem-calc(-5);
+  }
+
+  // No JS
+  .no-js {
+    .mega-menu {
+      ul {
+        top: 0;
+        left: 100%;
+        right: auto;
+        border-left: 1px solid $medium-gray;
+      }
+    }
   }
 }
 
