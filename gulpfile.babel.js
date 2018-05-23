@@ -226,7 +226,8 @@ function images() {
 function server(done) {
   browser.init({
     server: PATHS.dist,
-    port: PORT
+    port: PORT,
+    open: false
   });
   done();
 }

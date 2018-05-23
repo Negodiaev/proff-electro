@@ -105,7 +105,7 @@
     }
     .mega-menu {
       a {
-        padding: rem-calc(12 10);
+        padding: rem-calc(12 36 12 10);
       }
     }
   }
@@ -913,13 +913,11 @@
         padding-right: rem-calc(25);
       }
     }
-    .mega-menu {
-      a {
-        padding-right: rem-calc(8);
-      }
-    }
   }
   .mega-menu {
+    ul {
+      width: rem-calc(300);
+    }
     li {
       position: static;
       &:not(:last-child) {
